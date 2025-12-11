@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Book, PenTool, Brain, Layers, ArrowRight, CheckCircle } from 'lucide-react';
+import { Book, PenTool, Brain, Layers, ArrowRight, CheckCircle, PieChart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -38,6 +38,13 @@ const Index = () => {
       href: '/flashcards',
       color: 'bg-destructive/10 text-destructive',
     },
+    {
+      icon: PieChart,
+      title: 'Visualizações',
+      description: 'Manipule frações com pizzas e barras interativas',
+      href: '/visualizacoes',
+      color: 'bg-chart-1/10 text-chart-1',
+    },
   ];
 
   return (
@@ -56,6 +63,7 @@ const Index = () => {
             <Link to="/exercicios" className="text-muted-foreground hover:text-foreground transition-colors">Exercícios</Link>
             <Link to="/quiz" className="text-muted-foreground hover:text-foreground transition-colors">Quiz</Link>
             <Link to="/flashcards" className="text-muted-foreground hover:text-foreground transition-colors">Flashcards</Link>
+            <Link to="/visualizacoes" className="text-muted-foreground hover:text-foreground transition-colors">Visualizações</Link>
           </nav>
         </div>
       </header>
@@ -121,7 +129,7 @@ const Index = () => {
               Escolha como quer aprender. Combine teoria, prática e testes para dominar frações.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {features.map((feature, index) => (
               <Link key={feature.title} to={feature.href}>
                 <Card className="h-full card-hover cursor-pointer group" style={{ animationDelay: `${index * 100}ms` }}>
