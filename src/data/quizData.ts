@@ -78,6 +78,63 @@ export const generalQuiz: QuizQuestion[] = [
     correctAnswer: 1,
     explanation: '1/2 = 4/8. Então 7/8 - 4/8 = 3/8.',
   },
+  // Questões extras do PDF
+  {
+    id: 'quiz-11',
+    question: 'Qual é a fração equivalente a 1/2?',
+    options: ['2/3', '3/6', '4/5', '2/4'],
+    correctAnswer: 1,
+    explanation: '3/6 simplificado = 1/2. Multiplicando numerador e denominador por 3.',
+  },
+  {
+    id: 'quiz-12',
+    question: 'Simplifique a fração 8/12:',
+    options: ['2/3', '3/4', '4/6', '1/2'],
+    correctAnswer: 0,
+    explanation: 'MDC(8,12) = 4. 8÷4=2, 12÷4=3. Resultado: 2/3.',
+  },
+  {
+    id: 'quiz-13',
+    question: 'Qual é o resultado de 3/4 × 2/3?',
+    options: ['1/2', '6/12', '5/7', '2/4'],
+    correctAnswer: 0,
+    explanation: '(3×2)/(4×3) = 6/12 = 1/2.',
+  },
+  {
+    id: 'quiz-14',
+    question: 'Qual é o resultado de 5/6 ÷ 2/3?',
+    options: ['15/12', '5/4', '10/18', '3/4'],
+    correctAnswer: 1,
+    explanation: '5/6 ÷ 2/3 = 5/6 × 3/2 = 15/12 = 5/4.',
+  },
+  {
+    id: 'quiz-15',
+    question: 'Soma: 2/5 + 3/10 + 1/2',
+    options: ['1', '6/5', '9/10', '7/10'],
+    correctAnswer: 1,
+    explanation: 'MMC=10. 4/10 + 3/10 + 5/10 = 12/10 = 6/5.',
+  },
+  {
+    id: 'quiz-16',
+    question: 'Um tanque está 3/8 cheio. Adicionam-se 5/16 do tanque. Que fração está cheia agora?',
+    options: ['11/16', '13/16', '1', '8/16'],
+    correctAnswer: 0,
+    explanation: '3/8 = 6/16. Soma: 6/16 + 5/16 = 11/16.',
+  },
+  {
+    id: 'quiz-17',
+    question: 'Um bolo dividido em 12 partes. João comeu 1/3, Maria 1/4 e Ana 1/6. Quanto sobrou?',
+    options: ['1/4', '1/6', '1/12', '3/12'],
+    correctAnswer: 0,
+    explanation: 'Comeram: 4/12+3/12+2/12 = 9/12. Sobrou: 12/12-9/12 = 3/12 = 1/4.',
+  },
+  {
+    id: 'quiz-18',
+    question: 'Qual é o resultado de (7/8 ÷ 14/16) × (3/4 ÷ 9/12)?',
+    options: ['1', '2/3', '4/3', '1/2'],
+    correctAnswer: 0,
+    explanation: 'Ambas divisões resultam em 1. Resultado final: 1 × 1 = 1.',
+  },
 ];
 
 export const moduleQuizzes: Record<string, QuizQuestion[]> = {
