@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Brain, CheckCircle, XCircle, Trophy, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -8,6 +8,7 @@ import { Progress } from '@/components/ui/progress';
 import { generalQuiz, moduleQuizzes, QuizQuestion } from '@/data/quizData';
 import { theoryModules } from '@/data/theoryContent';
 import { useProgress } from '@/hooks/useProgress';
+import Header from '@/components/Header';
 
 type QuizMode = 'select' | 'playing' | 'results';
 
@@ -84,16 +85,7 @@ const Quiz = () => {
     const percentage = getScorePercentage();
     return (
       <div className="min-h-screen bg-background">
-        <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">½</span>
-              </div>
-              <span className="font-display font-bold text-xl">Frações</span>
-            </Link>
-          </div>
-        </header>
+        <Header />
 
         <main className="container mx-auto px-4 py-8 max-w-2xl">
           <Card className="text-center animate-scale-in">
@@ -252,22 +244,7 @@ const Quiz = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">½</span>
-            </div>
-            <span className="font-display font-bold text-xl">Frações</span>
-          </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link to="/teoria" className="text-muted-foreground hover:text-foreground transition-colors">Teoria</Link>
-            <Link to="/exercicios" className="text-muted-foreground hover:text-foreground transition-colors">Exercícios</Link>
-            <Link to="/quiz" className="text-foreground font-medium">Quiz</Link>
-            <Link to="/flashcards" className="text-muted-foreground hover:text-foreground transition-colors">Flashcards</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main className="container mx-auto px-4 py-8">
         <Button variant="ghost" onClick={() => navigate('/')} className="mb-6 gap-2">
