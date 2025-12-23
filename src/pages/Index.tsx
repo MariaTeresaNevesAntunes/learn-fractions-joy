@@ -76,8 +76,7 @@ const Index = () => {
               📚 Aprendizado Interativo
             </span>
             <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Domine o Mundo das
-              <span className="block text-primary">Frações</span>
+              MTNA-Domine o Mundo das <span className="text-primary">Frações</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Do básico ao avançado, aprenda frações de forma interativa com teoria clara, 
