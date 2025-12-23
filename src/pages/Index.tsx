@@ -52,11 +52,19 @@ const Index = () => {
       {/* Header */}
       <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">½</span>
+          <Link to="/" className="flex items-center gap-3">
+            <div className="relative">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-lg shadow-primary/25">
+                <span className="text-primary-foreground font-black text-sm tracking-tight">MTNA</span>
+              </div>
+              <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-md bg-secondary flex items-center justify-center">
+                <span className="text-secondary-foreground font-bold text-xs">½</span>
+              </div>
             </div>
-            <span className="font-display font-bold text-xl">Frações</span>
+            <div className="flex flex-col">
+              <span className="font-display font-bold text-lg leading-tight">MTNA</span>
+              <span className="text-xs text-muted-foreground">Domine as Frações</span>
+            </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link to="/teoria" className="text-muted-foreground hover:text-foreground transition-colors">Teoria</Link>
