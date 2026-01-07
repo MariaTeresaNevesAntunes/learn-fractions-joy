@@ -58,14 +58,32 @@ const Contact = () => {
       </header>
 
       <main className="container mx-auto px-4 py-8 max-w-2xl">
+        {/* Direct Contact Info */}
+        <div className="bg-primary/5 rounded-xl p-6 mb-6 text-center border">
+          <h2 className="font-semibold text-lg mb-2">Contato Direto</h2>
+          <p className="text-muted-foreground mb-3">
+            Pode contactar-me diretamente através do e-mail:
+          </p>
+          <a 
+            href="mailto:mtna.fracoes@gmail.com" 
+            className="inline-flex items-center gap-2 text-primary font-medium hover:underline text-lg"
+          >
+            <Mail className="h-5 w-5" />
+            mtna.fracoes@gmail.com
+          </a>
+          <p className="text-sm text-muted-foreground mt-3">
+            <strong>Maria Teresa Neves Antunes</strong> - Fundadora do MTNA
+          </p>
+        </div>
+
         <Card className="border-border/50 shadow-lg">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl flex items-center justify-center gap-2">
               <Mail className="h-6 w-6 text-primary" />
-              Entre em Contato
+              Formulário de Contato
             </CardTitle>
             <CardDescription>
-              Tem alguma dúvida, sugestão ou feedback? Adoraríamos ouvir você!
+              Ou utilize o formulário abaixo para enviar uma mensagem:
             </CardDescription>
           </CardHeader>
           <CardContent>
