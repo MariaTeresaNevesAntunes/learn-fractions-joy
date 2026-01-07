@@ -145,18 +145,27 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Maria Teresa Neves Antunes</h3>
-                <p className="text-primary font-medium mb-4">Licenciada em Matemática</p>
+                <p className="text-primary font-medium mb-4">Licenciada em Matemática - Universidad Nacional Abierta</p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Formada pela Universidad Nacional Abierta, tenho como objetivo principal facilitar 
-                  o ensino e a aprendizagem da matemática, utilizando ferramentas modernas como a informática 
-                  para tornar os conceitos mais acessíveis e compreensíveis para todos os estudantes.
+                  Formada pela Universidad Nacional Abierta com Licenciatura em Matemática, tenho como objetivo 
+                  principal facilitar o ensino e a aprendizagem da matemática, utilizando ferramentas modernas 
+                  como a informática para tornar os conceitos mais acessíveis e compreensíveis para todos os estudantes.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                   O projeto MTNA nasceu da minha paixão por educação matemática e da crença de que 
                   todos podem aprender frações quando têm acesso às ferramentas certas. Trabalho 
                   continuamente para melhorar e expandir os conteúdos, sempre com foco na experiência 
                   do estudante.
                 </p>
+                <div className="bg-background/50 rounded-lg p-4 border">
+                  <p className="font-medium mb-2">📧 Contato Direto:</p>
+                  <a 
+                    href="mailto:mtna.fracoes@gmail.com" 
+                    className="text-primary hover:underline"
+                  >
+                    mtna.fracoes@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>

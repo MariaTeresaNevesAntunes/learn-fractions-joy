@@ -210,21 +210,37 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-muted-foreground text-sm">
-              © 2024 MTNA-Domine o Mundo das Frações - Site Educativo. Aprenda matemática de forma divertida!
-            </p>
-            <nav className="flex items-center gap-4 text-sm">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+            <div className="text-center md:text-left">
+              <p className="text-muted-foreground text-sm">
+                © 2024 MTNA - Domine as Frações. Desenvolvido por <strong>Maria Teresa Neves Antunes</strong>.
+              </p>
+              <p className="text-muted-foreground text-xs mt-1">
+                Plataforma educativa gratuita para aprender matemática.
+              </p>
+            </div>
+            <nav className="flex flex-wrap items-center justify-center gap-4 text-sm">
+              <Link to="/sobre" className="text-muted-foreground hover:text-foreground transition-colors">
+                Sobre
+              </Link>
               <Link to="/privacidade" className="text-muted-foreground hover:text-foreground transition-colors">
                 Privacidade
               </Link>
+              <Link to="/cookies" className="text-muted-foreground hover:text-foreground transition-colors">
+                Cookies
+              </Link>
               <Link to="/termos" className="text-muted-foreground hover:text-foreground transition-colors">
-                Termos de Uso
+                Termos
               </Link>
               <Link to="/contato" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contato
               </Link>
             </nav>
+          </div>
+          <div className="text-center text-xs text-muted-foreground border-t pt-4">
+            <p>
+              Contacto: <a href="mailto:mtna.fracoes@gmail.com" className="text-primary hover:underline">mtna.fracoes@gmail.com</a>
+            </p>
           </div>
         </div>
       </footer>
