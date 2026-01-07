@@ -130,24 +130,35 @@ const About = () => {
           </div>
         </section>
 
-        {/* Team Section */}
+        {/* Founder Section */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
                 <Users className="w-7 h-7 text-primary" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold">A Nossa Equipa</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-bold">Sobre a Fundadora</h2>
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              O MTNA é desenvolvido por uma equipa apaixonada por educação e tecnologia. 
-              Combinamos experiência em pedagogia matemática com conhecimentos técnicos para 
-              criar uma plataforma que realmente faz a diferença na aprendizagem dos estudantes.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Trabalhamos continuamente para melhorar e expandir os nossos conteúdos, 
-              incorporando feedback dos utilizadores e as mais recentes pesquisas em educação matemática.
-            </p>
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <GraduationCap className="w-12 h-12 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Maria Teresa Neves Antunes</h3>
+                <p className="text-primary font-medium mb-4">Licenciada em Matemática</p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Formada pela Universidad Nacional Abierta, tenho como objetivo principal facilitar 
+                  o ensino e a aprendizagem da matemática, utilizando ferramentas modernas como a informática 
+                  para tornar os conceitos mais acessíveis e compreensíveis para todos os estudantes.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  O projeto MTNA nasceu da minha paixão por educação matemática e da crença de que 
+                  todos podem aprender frações quando têm acesso às ferramentas certas. Trabalho 
+                  continuamente para melhorar e expandir os conteúdos, sempre com foco na experiência 
+                  do estudante.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
