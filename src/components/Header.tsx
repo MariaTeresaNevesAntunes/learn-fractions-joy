@@ -47,6 +47,12 @@ const Header = () => {
           >
             Flashcards
           </Link>
+          <Link 
+            to="/sobre" 
+            className={isActive('/sobre') ? 'text-foreground font-medium' : 'text-muted-foreground hover:text-foreground transition-colors'}
+          >
+            Sobre
+          </Link>
         </nav>
       </div>
     </header>
