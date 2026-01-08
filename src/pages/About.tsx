@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import { Link } from "react-router-dom";
-import { BookOpen, Target, Users, Heart, GraduationCap, Lightbulb } from "lucide-react";
+import { BookOpen, Target, Users, Heart, GraduationCap, Lightbulb, Eye, TrendingUp, CheckCircle, Sparkles } from "lucide-react";
 
 const About = () => {
   return (
@@ -11,67 +11,140 @@ const About = () => {
         {/* Hero Section */}
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Sobre o <span className="text-primary">MTNA</span>
+            Sobre o <span className="text-primary">Learn Fractions Joy</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Um projeto educativo dedicado a tornar a aprendizagem de frações acessível, 
-            divertida e eficaz para estudantes de todas as idades.
+            Um projeto dedicado a ajudar alunos a compreender frações de forma simples, visual e confiante.
           </p>
         </section>
 
-        {/* Mission Section */}
+        {/* About the Author Section */}
         <section className="mb-16">
-          <div className="bg-card rounded-2xl p-8 md:p-12 border">
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Target className="w-7 h-7 text-primary" />
+                <GraduationCap className="w-7 h-7 text-primary" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold">A Nossa Missão</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-bold">👩‍🏫 Sobre a Autora</h2>
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              A missão do MTNA é democratizar o ensino de matemática, especificamente no domínio das frações. 
-              Acreditamos que todos os estudantes, independentemente do seu nível de conhecimento prévio, 
-              podem dominar este conceito fundamental com as ferramentas e metodologias certas.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              O nosso objetivo é proporcionar uma experiência de aprendizagem interativa e envolvente, 
-              utilizando visualizações intuitivas, exercícios práticos e feedback imediato para 
-              construir uma compreensão sólida e duradoura.
-            </p>
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <Users className="w-12 h-12 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Sou a <span className="text-primary">Maria</span>, educadora e criadora do Learn Fractions Joy
+                </h3>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Um projeto dedicado a ajudar alunos a compreender frações de forma simples, visual e confiante.
+                </p>
+                <div className="bg-card rounded-xl p-6 border mb-6">
+                  <p className="text-lg font-medium text-foreground mb-4 italic">
+                    "Acredito que a matemática só se torna difícil quando é mal explicada."
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Por isso, desenvolvo conteúdos que transformam as frações — um dos temas mais desafiantes 
+                    para muitos estudantes — em algo claro, lógico e acessível.
+                  </p>
+                </div>
+                
+                <h4 className="font-semibold text-lg mb-4">O meu trabalho combina:</h4>
+                <div className="grid md:grid-cols-2 gap-3 mb-6">
+                  <div className="flex items-center gap-3 bg-card p-3 rounded-lg border">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Explicações passo a passo</span>
+                  </div>
+                  <div className="flex items-center gap-3 bg-card p-3 rounded-lg border">
+                    <Eye className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Representações visuais intuitivas</span>
+                  </div>
+                  <div className="flex items-center gap-3 bg-card p-3 rounded-lg border">
+                    <TrendingUp className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Exercícios graduais</span>
+                  </div>
+                  <div className="flex items-center gap-3 bg-card p-3 rounded-lg border">
+                    <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Linguagem simples e direta</span>
+                  </div>
+                  <div className="flex items-center gap-3 bg-card p-3 rounded-lg border md:col-span-2">
+                    <Lightbulb className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Rigor matemático sem complicações</span>
+                  </div>
+                </div>
+
+                <div className="bg-primary/10 rounded-xl p-6 border border-primary/20">
+                  <p className="text-lg font-medium text-foreground">
+                    🎯 O objetivo é sempre o mesmo: <span className="text-primary">fazer com que cada aluno sinta que consegue aprender frações</span>, mesmo que já tenha tentado antes.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Values Section */}
+        {/* Objectives Section */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-center mb-10">
-            Os Nossos Valores
+            🎯 Objetivos do Learn Fractions Joy
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-card rounded-xl p-6 border text-center">
-              <div className="w-12 h-12 rounded-lg bg-secondary/50 flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-6 h-6 text-secondary-foreground" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-card rounded-xl p-6 border">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <span className="text-primary font-bold">✔️</span>
+                </div>
+                <h3 className="font-semibold text-lg">1. Simplificar as frações ao máximo</h3>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Educação Acessível</h3>
               <p className="text-muted-foreground">
-                Conteúdos gratuitos e de qualidade, disponíveis para todos os estudantes em qualquer momento.
+                Cada conceito é apresentado com clareza, usando exemplos visuais e comparações do dia a dia.
               </p>
             </div>
-            <div className="bg-card rounded-xl p-6 border text-center">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="w-6 h-6 text-primary" />
+
+            <div className="bg-card rounded-xl p-6 border">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <span className="text-primary font-bold">✔️</span>
+                </div>
+                <h3 className="font-semibold text-lg">2. Aumentar a confiança do aluno</h3>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Aprendizagem Interativa</h3>
               <p className="text-muted-foreground">
-                Métodos visuais e práticos que facilitam a compreensão de conceitos matemáticos abstratos.
+                Frações deixam de ser um obstáculo e passam a ser uma ferramenta matemática compreensível e útil.
               </p>
             </div>
-            <div className="bg-card rounded-xl p-6 border text-center">
-              <div className="w-12 h-12 rounded-lg bg-accent/50 flex items-center justify-center mx-auto mb-4">
-                <GraduationCap className="w-6 h-6 text-accent-foreground" />
+
+            <div className="bg-card rounded-xl p-6 border">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <span className="text-primary font-bold">✔️</span>
+                </div>
+                <h3 className="font-semibold text-lg">3. Criar recursos acessíveis e autónomos</h3>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Excelência Pedagógica</h3>
               <p className="text-muted-foreground">
-                Conteúdos desenvolvidos seguindo as melhores práticas de ensino da matemática.
+                Guias, exercícios e explicações que permitem aprender ao próprio ritmo, com segurança e autonomia.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-6 border">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <span className="text-primary font-bold">✔️</span>
+                </div>
+                <h3 className="font-semibold text-lg">4. Apoiar pais, professores e tutores</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Materiais práticos que podem ser usados em casa, em sala de aula ou em apoio ao estudo.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-6 border md:col-span-2 lg:col-span-1">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <span className="text-primary font-bold">✔️</span>
+                </div>
+                <h3 className="font-semibold text-lg">5. Tornar a aprendizagem leve e motivadora</h3>
+              </div>
+              <p className="text-muted-foreground">
+                A matemática pode ser clara, lógica e até divertida quando apresentada com cuidado, estrutura e propósito.
               </p>
             </div>
           </div>
@@ -85,7 +158,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex gap-4 p-6 bg-card rounded-xl border">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-primary font-bold">1</span>
+                <BookOpen className="w-5 h-5 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">Teoria Completa</h3>
@@ -96,7 +169,7 @@ const About = () => {
             </div>
             <div className="flex gap-4 p-6 bg-card rounded-xl border">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-primary font-bold">2</span>
+                <TrendingUp className="w-5 h-5 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">Exercícios Práticos</h3>
@@ -107,7 +180,7 @@ const About = () => {
             </div>
             <div className="flex gap-4 p-6 bg-card rounded-xl border">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-primary font-bold">3</span>
+                <Eye className="w-5 h-5 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">Visualizações Interativas</h3>
@@ -118,54 +191,13 @@ const About = () => {
             </div>
             <div className="flex gap-4 p-6 bg-card rounded-xl border">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-primary font-bold">4</span>
+                <Sparkles className="w-5 h-5 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">Quizzes e Flashcards</h3>
                 <p className="text-muted-foreground">
                   Ferramentas de revisão e avaliação para consolidar o conhecimento adquirido.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Founder Section */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Users className="w-7 h-7 text-primary" />
-              </div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold">Sobre a Fundadora</h2>
-            </div>
-            <div className="flex flex-col md:flex-row gap-8 items-start">
-              <div className="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                <GraduationCap className="w-12 h-12 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Maria Teresa Neves Antunes</h3>
-                <p className="text-primary font-medium mb-4">Licenciada em Matemática - Universidad Nacional Abierta</p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Formada pela Universidad Nacional Abierta com Licenciatura em Matemática, tenho como objetivo 
-                  principal facilitar o ensino e a aprendizagem da matemática, utilizando ferramentas modernas 
-                  como a informática para tornar os conceitos mais acessíveis e compreensíveis para todos os estudantes.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  O projeto MTNA nasceu da minha paixão por educação matemática e da crença de que 
-                  todos podem aprender frações quando têm acesso às ferramentas certas. Trabalho 
-                  continuamente para melhorar e expandir os conteúdos, sempre com foco na experiência 
-                  do estudante.
-                </p>
-                <div className="bg-background/50 rounded-lg p-4 border">
-                  <p className="font-medium mb-2">📧 Contato Direto:</p>
-                  <a 
-                    href="mailto:mtna.fracoes@gmail.com" 
-                    className="text-primary hover:underline"
-                  >
-                    mtna.fracoes@gmail.com
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -178,7 +210,7 @@ const About = () => {
             <span className="text-muted-foreground">Tem questões ou sugestões?</span>
           </div>
           <h2 className="text-2xl font-display font-bold mb-6">
-            Entre em Contacto Connosco
+            Entre em Contacto
           </h2>
           <Link 
             to="/contato" 
@@ -192,7 +224,7 @@ const About = () => {
       {/* Footer */}
       <footer className="border-t mt-16 py-8">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>© 2024 MTNA - Domine as Frações. Todos os direitos reservados.</p>
+          <p>© 2024 Learn Fractions Joy. Todos os direitos reservados.</p>
           <div className="flex justify-center gap-6 mt-4">
             <Link to="/privacidade" className="hover:text-foreground transition-colors">Privacidade</Link>
             <Link to="/termos" className="hover:text-foreground transition-colors">Termos</Link>
