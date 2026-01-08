@@ -18,59 +18,59 @@ export interface TheoryModule {
 export const theoryModules: TheoryModule[] = [
   {
     id: 'module-1',
-    title: 'O que são Frações?',
+    title: 'O que é uma Fração?',
     description: 'Conceito fundamental e representação visual',
-    icon: '🎯',
+    icon: '🌟',
     content: {
       sections: [
         {
-          title: 'Definição',
-          text: 'Uma fração representa uma parte de um todo. É composta por dois números: o numerador (em cima) indica quantas partes temos, e o denominador (em baixo) indica em quantas partes o todo foi dividido.',
+          title: 'Ideia Principal',
+          text: 'Uma fração representa uma parte de um todo. É formada por dois números separados por uma barra: o numerador (em cima) indica quantas partes estamos a considerar, e o denominador (em baixo) indica em quantas partes iguais o todo foi dividido.',
+        },
+        {
+          title: 'Exemplos Simples',
+          text: 'Vamos ver alguns exemplos práticos de frações no dia a dia.',
           example: {
-            problem: 'Se uma pizza foi dividida em 8 partes iguais e você comeu 3, qual fração representa o que você comeu?',
-            solution: '3/8 - O numerador é 3 (partes comidas) e o denominador é 8 (total de partes).',
+            problem: '1/2 representa que parte?',
+            solution: '1/2 significa uma de duas partes iguais - ou seja, metade!',
           },
         },
         {
-          title: 'Representação Visual',
-          text: 'Frações podem ser representadas de várias formas: como partes de um círculo (pizza), barras divididas, ou pontos em uma reta numérica. Cada representação ajuda a visualizar o conceito de diferentes maneiras.',
-        },
-        {
-          title: 'Leitura de Frações',
-          text: 'Para ler uma fração, dizemos primeiro o numerador e depois o denominador com terminação específica: 1/2 = um meio, 1/3 = um terço, 1/4 = um quarto, 1/5 = um quinto, etc.',
+          title: 'Quando Usamos Frações?',
+          text: 'Usamos frações em muitas situações: para representar partes de um objeto (pizza, barra de chocolate), para medir (litros, metros, tempo), e para comparar quantidades.',
         },
       ],
     },
   },
   {
     id: 'module-2',
-    title: 'Tipos de Frações',
-    description: 'Próprias, impróprias e aparentes',
+    title: 'Frações Próprias, Impróprias e Números Mistos',
+    description: 'Tipos de frações e suas características',
     icon: '📊',
     content: {
       sections: [
         {
-          title: 'Frações Próprias',
-          text: 'São frações onde o numerador é menor que o denominador. Representam uma quantidade menor que 1 inteiro.',
+          title: 'Fração Própria',
+          text: 'O numerador é menor que o denominador. Representa menos que 1.',
           example: {
             problem: 'Exemplos de frações próprias',
-            solution: '1/2, 3/4, 5/8, 2/7 - Em todas, o número de cima é menor que o de baixo.',
+            solution: '2/5, 7/8, 3/4 - Em todas, o número de cima é menor que o de baixo.',
           },
         },
         {
-          title: 'Frações Impróprias',
-          text: 'São frações onde o numerador é maior ou igual ao denominador. Representam uma quantidade igual ou maior que 1 inteiro.',
+          title: 'Fração Imprópria',
+          text: 'O numerador é maior ou igual ao denominador. Representa 1 ou mais.',
           example: {
             problem: 'Exemplos de frações impróprias',
-            solution: '5/3, 8/4, 11/5 - O número de cima é maior ou igual ao de baixo.',
+            solution: '7/4, 9/3, 11/6 - O número de cima é maior ou igual ao de baixo.',
           },
         },
         {
-          title: 'Frações Aparentes',
-          text: 'São frações impróprias especiais onde o numerador é múltiplo do denominador, resultando em um número inteiro.',
+          title: 'Número Misto',
+          text: 'É formado por um número inteiro + uma fração própria.',
           example: {
-            problem: 'Exemplos de frações aparentes',
-            solution: '4/2 = 2, 9/3 = 3, 15/5 = 3 - Dividindo, obtemos números inteiros.',
+            problem: 'Exemplo de número misto',
+            solution: '2 1/3 significa 2 inteiros e mais 1/3.',
           },
         },
       ],
@@ -79,29 +79,33 @@ export const theoryModules: TheoryModule[] = [
   {
     id: 'module-3',
     title: 'Frações Equivalentes',
-    description: 'Simplificação e equivalência',
+    description: 'Como encontrar e simplificar frações equivalentes',
     icon: '⚖️',
     content: {
       sections: [
         {
-          title: 'O que são Frações Equivalentes?',
-          text: 'Frações equivalentes são frações que representam a mesma quantidade, mesmo tendo numeradores e denominadores diferentes. Por exemplo, 1/2 e 2/4 representam a mesma parte.',
+          title: 'O que são?',
+          text: 'Frações equivalentes são frações diferentes que representam a mesma quantidade.',
           example: {
-            problem: 'Encontre uma fração equivalente a 2/3',
-            solution: 'Multiplicando numerador e denominador por 2: 2×2/3×2 = 4/6. Portanto, 2/3 = 4/6.',
+            problem: 'Exemplo de frações equivalentes',
+            solution: '1/2 = 2/4 = 3/6 - Todas representam metade!',
           },
         },
         {
-          title: 'Simplificação de Frações',
-          text: 'Simplificar uma fração significa encontrar uma fração equivalente com os menores números possíveis. Dividimos numerador e denominador pelo mesmo número (MDC).',
+          title: 'Como Encontrar',
+          text: 'Multiplica ou divide o numerador e o denominador pelo mesmo número.',
           example: {
-            problem: 'Simplifique 12/18',
-            solution: 'MDC(12,18) = 6. Dividindo: 12÷6/18÷6 = 2/3. A fração simplificada é 2/3.',
+            problem: 'Encontra uma fração equivalente a 2/3',
+            solution: 'Multiplicando por 2: 2×2/3×2 = 4/6. Portanto, 2/3 = 4/6.',
           },
         },
         {
-          title: 'Fração Irredutível',
-          text: 'Uma fração está na forma irredutível quando não pode mais ser simplificada, ou seja, o numerador e denominador só têm o número 1 como divisor comum.',
+          title: 'Simplificação',
+          text: 'Divide o numerador e o denominador pelo mesmo número (o maior possível - MDC).',
+          example: {
+            problem: 'Simplifica 6/9',
+            solution: 'MDC(6,9) = 3. Dividindo: 6÷3/9÷3 = 2/3.',
+          },
         },
       ],
     },
@@ -109,32 +113,32 @@ export const theoryModules: TheoryModule[] = [
   {
     id: 'module-4',
     title: 'Comparação de Frações',
-    description: 'Ordenar e comparar frações',
+    description: 'Como comparar e ordenar frações',
     icon: '🔍',
     content: {
       sections: [
         {
           title: 'Mesmo Denominador',
-          text: 'Quando duas frações têm o mesmo denominador, a maior é aquela com maior numerador. É simples: mais partes do mesmo tamanho = quantidade maior.',
+          text: 'Compara apenas os numeradores. A fração com maior numerador é a maior.',
           example: {
-            problem: 'Compare 3/7 e 5/7',
+            problem: 'Compara 3/7 e 5/7',
             solution: 'Como 5 > 3, então 5/7 > 3/7.',
           },
         },
         {
-          title: 'Mesmo Numerador',
-          text: 'Quando duas frações têm o mesmo numerador, a maior é aquela com menor denominador. Quanto mais partes, menores elas são.',
+          title: 'Denominadores Diferentes',
+          text: 'Encontra frações equivalentes com o mesmo denominador (usando o MMC) e depois compara os numeradores.',
           example: {
-            problem: 'Compare 2/5 e 2/8',
-            solution: 'Como 5 < 8, então 2/5 > 2/8. Dividir em menos partes = partes maiores.',
+            problem: 'Compara 2/3 e 3/4',
+            solution: 'MMC(3,4) = 12. 2/3 = 8/12 e 3/4 = 9/12. Como 9 > 8, então 3/4 > 2/3.',
           },
         },
         {
-          title: 'Denominadores Diferentes',
-          text: 'Para comparar frações com denominadores diferentes, encontramos o MMC e convertemos ambas para frações equivalentes com mesmo denominador.',
+          title: 'Conversão para Decimal',
+          text: 'Outra forma de comparar: divide o numerador pelo denominador e compara os resultados decimais.',
           example: {
-            problem: 'Compare 2/3 e 3/4',
-            solution: 'MMC(3,4) = 12. 2/3 = 8/12 e 3/4 = 9/12. Como 9 > 8, então 3/4 > 2/3.',
+            problem: 'Compara 3/5 e 2/3 usando decimais',
+            solution: '3/5 = 0,6 e 2/3 ≈ 0,667. Como 0,667 > 0,6, então 2/3 > 3/5.',
           },
         },
       ],
@@ -142,33 +146,33 @@ export const theoryModules: TheoryModule[] = [
   },
   {
     id: 'module-5',
-    title: 'Soma e Subtração',
+    title: 'Adição e Subtração de Frações',
     description: 'Operações básicas com frações',
     icon: '➕',
     content: {
       sections: [
         {
           title: 'Mesmo Denominador',
-          text: 'Quando as frações têm o mesmo denominador, somamos ou subtraímos apenas os numeradores, mantendo o denominador.',
+          text: 'Soma ou subtrai os numeradores e mantém o denominador.',
           example: {
-            problem: 'Calcule 2/5 + 1/5',
+            problem: 'Calcula 2/5 + 1/5',
             solution: '2/5 + 1/5 = (2+1)/5 = 3/5',
           },
         },
         {
           title: 'Denominadores Diferentes',
-          text: 'Quando os denominadores são diferentes, precisamos encontrar o MMC para criar frações equivalentes com mesmo denominador.',
+          text: 'Primeiro, encontra o MMC dos denominadores. Depois, converte as frações para terem o mesmo denominador. Por fim, soma ou subtrai os numeradores.',
           example: {
-            problem: 'Calcule 1/3 + 1/4',
+            problem: 'Calcula 1/3 + 1/4',
             solution: 'MMC(3,4) = 12. 1/3 = 4/12 e 1/4 = 3/12. Soma: 4/12 + 3/12 = 7/12.',
           },
         },
         {
-          title: 'Subtração',
-          text: 'O processo é idêntico à soma, mas subtraímos os numeradores em vez de somar.',
+          title: 'Simplificação do Resultado',
+          text: 'Após a operação, verifica se o resultado pode ser simplificado.',
           example: {
-            problem: 'Calcule 3/4 - 1/2',
-            solution: 'MMC(4,2) = 4. 3/4 = 3/4 e 1/2 = 2/4. Subtração: 3/4 - 2/4 = 1/4.',
+            problem: 'Calcula 3/4 - 1/4 e simplifica',
+            solution: '3/4 - 1/4 = 2/4 = 1/2 (simplificando por 2).',
           },
         },
       ],
