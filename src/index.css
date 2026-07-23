@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -26,14 +26,14 @@
     --input: 214 32% 91%;
     --ring: 199 89% 48%;
     --radius: 0.75rem;
-    
+
     --success: 160 84% 39%;
     --success-foreground: 0 0% 100%;
     --warning: 43 96% 56%;
     --warning-foreground: 222 47% 11%;
     --info: 199 89% 48%;
     --info-foreground: 0 0% 100%;
-    
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 199 89% 48%;
@@ -64,7 +64,7 @@
     --border: 222 47% 25%;
     --input: 222 47% 25%;
     --ring: 199 89% 48%;
-    
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 199 89% 48%;
@@ -82,10 +82,15 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Space Grotesk", sans-serif;
   }
 }
 
@@ -93,8 +98,38 @@
   .hover-scale {
     @apply transition-transform duration-200 hover:scale-105;
   }
-  
+
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  /* --- estilos globais do teu site --- */
+
+  /* --- GALERIA DE VÍDEOS --- */
+  .video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .video-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .video-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .video-card h3 {
+    margin-top: 15px;
+    font-size: 18px;
   }
 }
