@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
-import { Book, PenTool, Brain, Layers, ArrowRight, CheckCircle, PieChart } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { useProgress } from '@/hooks/useProgress';
+import { Link } from "react-router-dom";
+import { Book, PenTool, Brain, Layers, ArrowRight, CheckCircle, PieChart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import { useProgress } from "@/hooks/useProgress";
 
 const Index = () => {
   const { getOverallProgress, progress } = useProgress();
@@ -12,38 +12,38 @@ const Index = () => {
   const features = [
     {
       icon: Book,
-      title: 'Teoria Completa',
-      description: '8 módulos progressivos do básico ao avançado',
-      href: '/teoria',
-      color: 'bg-primary/10 text-primary',
+      title: "Teoria Completa",
+      description: "8 módulos progressivos do básico ao avançado",
+      href: "/teoria",
+      color: "bg-primary/10 text-primary",
     },
     {
       icon: PenTool,
-      title: 'Exercícios Práticos',
-      description: 'Pratique com feedback imediato e explicações',
-      href: '/exercicios',
-      color: 'bg-secondary/10 text-secondary',
+      title: "Exercícios Práticos",
+      description: "Pratique com feedback imediato e explicações",
+      href: "/exercicios",
+      color: "bg-secondary/10 text-secondary",
     },
     {
       icon: Brain,
-      title: 'Quiz Interativo',
-      description: 'Teste seus conhecimentos por módulo ou geral',
-      href: '/quiz',
-      color: 'bg-accent/10 text-accent-foreground',
+      title: "Quiz Interativo",
+      description: "Teste seus conhecimentos por módulo ou geral",
+      href: "/quiz",
+      color: "bg-accent/10 text-accent-foreground",
     },
     {
       icon: Layers,
-      title: 'Flashcards',
-      description: 'Memorize conceitos-chave de forma divertida',
-      href: '/flashcards',
-      color: 'bg-destructive/10 text-destructive',
+      title: "Flashcards",
+      description: "Memorize conceitos-chave de forma divertida",
+      href: "/flashcards",
+      color: "bg-destructive/10 text-destructive",
     },
     {
       icon: PieChart,
-      title: 'Visualizações',
-      description: 'Manipule frações com pizzas e barras interativas',
-      href: '/visualizacoes',
-      color: 'bg-chart-1/10 text-chart-1',
+      title: "Visualizações",
+      description: "Manipule frações com pizzas e barras interativas",
+      href: "/visualizacoes",
+      color: "bg-chart-1/10 text-chart-1",
     },
   ];
 
@@ -67,11 +67,21 @@ const Index = () => {
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <Link to="/teoria" className="text-muted-foreground hover:text-foreground transition-colors">Teoria</Link>
-            <Link to="/exercicios" className="text-muted-foreground hover:text-foreground transition-colors">Exercícios</Link>
-            <Link to="/quiz" className="text-muted-foreground hover:text-foreground transition-colors">Quiz</Link>
-            <Link to="/flashcards" className="text-muted-foreground hover:text-foreground transition-colors">Flashcards</Link>
-            <Link to="/visualizacoes" className="text-muted-foreground hover:text-foreground transition-colors">Visualizações</Link>
+            <Link to="/teoria" className="text-muted-foreground hover:text-foreground transition-colors">
+              Teoria
+            </Link>
+            <Link to="/exercicios" className="text-muted-foreground hover:text-foreground transition-colors">
+              Exercícios
+            </Link>
+            <Link to="/quiz" className="text-muted-foreground hover:text-foreground transition-colors">
+              Quiz
+            </Link>
+            <Link to="/flashcards" className="text-muted-foreground hover:text-foreground transition-colors">
+              Flashcards
+            </Link>
+            <Link to="/visualizacoes" className="text-muted-foreground hover:text-foreground transition-colors">
+              Visualizações
+            </Link>
           </nav>
         </div>
       </header>
@@ -87,8 +97,8 @@ const Index = () => {
               MTNA-Domine o Mundo das <span className="text-primary">Frações</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Do básico ao avançado, aprenda frações de forma interativa com teoria clara, 
-              exercícios práticos, quizzes e flashcards.
+              Do básico ao avançado, aprenda frações de forma interativa com teoria clara, exercícios práticos, quizzes
+              e flashcards.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="gap-2">
@@ -141,7 +151,9 @@ const Index = () => {
               <Link key={feature.title} to={feature.href}>
                 <Card className="h-full card-hover cursor-pointer group" style={{ animationDelay: `${index * 100}ms` }}>
                   <CardHeader>
-                    <div className={`w-12 h-12 rounded-xl ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <div
+                      className={`w-12 h-12 rounded-xl ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                    >
                       <feature.icon className="w-6 h-6" />
                     </div>
                     <CardTitle className="font-display">{feature.title}</CardTitle>
@@ -168,31 +180,39 @@ const Index = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { num: 1, den: 2, color: 'bg-primary' },
-              { num: 2, den: 3, color: 'bg-secondary' },
-              { num: 3, den: 4, color: 'bg-accent' },
+              { num: 1, den: 2, color: "bg-primary" },
+              { num: 2, den: 3, color: "bg-secondary" },
+              { num: 3, den: 4, color: "bg-accent" },
             ].map((frac, idx) => (
               <div key={idx} className="text-center">
                 <div className="relative w-32 h-32 rounded-full border-4 border-muted overflow-hidden mb-4">
-                  <div 
+                  <div
                     className={`absolute inset-0 ${frac.color}`}
-                    style={{ 
-                      clipPath: `polygon(50% 50%, 50% 0%, ${50 + 50 * Math.sin(2 * Math.PI * frac.num / frac.den)}% ${50 - 50 * Math.cos(2 * Math.PI * frac.num / frac.den)}%, ${frac.num / frac.den > 0.5 ? '100% 0%, 100% 100%, 0% 100%, 0% 0%,' : ''} 50% 0%)`
+                    style={{
+                      clipPath: `polygon(50% 50%, 50% 0%, ${50 + 50 * Math.sin((2 * Math.PI * frac.num) / frac.den)}% ${50 - 50 * Math.cos((2 * Math.PI * frac.num) / frac.den)}%, ${frac.num / frac.den > 0.5 ? "100% 0%, 100% 100%, 0% 100%, 0% 0%," : ""} 50% 0%)`,
                     }}
                   />
-                  <div 
+                  <div
                     className={`absolute inset-0 ${frac.color}`}
-                    style={{ 
+                    style={{
                       transform: `rotate(${-90}deg)`,
-                      transformOrigin: '50% 50%',
-                      clipPath: `conic-gradient(from 0deg, transparent 0%, transparent ${(frac.num / frac.den) * 100}%, red ${(frac.num / frac.den) * 100}%)`
+                      transformOrigin: "50% 50%",
+                      clipPath: `conic-gradient(from 0deg, transparent 0%, transparent ${(frac.num / frac.den) * 100}%, red ${(frac.num / frac.den) * 100}%)`,
                     }}
                   />
                   <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full">
-                    <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="2" className="text-muted" />
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="48"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-muted"
+                    />
                     <path
-                      d={`M 50 50 L 50 2 A 48 48 0 ${frac.num / frac.den > 0.5 ? 1 : 0} 1 ${50 + 48 * Math.sin(2 * Math.PI * frac.num / frac.den)} ${50 - 48 * Math.cos(2 * Math.PI * frac.num / frac.den)} Z`}
-                      className={frac.color.replace('bg-', 'fill-')}
+                      d={`M 50 50 L 50 2 A 48 48 0 ${frac.num / frac.den > 0.5 ? 1 : 0} 1 ${50 + 48 * Math.sin((2 * Math.PI * frac.num) / frac.den)} ${50 - 48 * Math.cos((2 * Math.PI * frac.num) / frac.den)} Z`}
+                      className={frac.color.replace("bg-", "fill-")}
                     />
                   </svg>
                 </div>
@@ -239,7 +259,10 @@ const Index = () => {
           </div>
           <div className="text-center text-xs text-muted-foreground border-t pt-4">
             <p>
-              Contacto: <a href="mailto:mtna.fracoes@gmail.com" className="text-primary hover:underline">mtna.fracoes@gmail.com</a>
+              Contacto:{" "}
+              <a href="mailto:mtna.fracoes@gmail.com" className="text-primary hover:underline">
+                mtna.fracoes@gmail.com
+              </a>
             </p>
           </div>
         </div>
