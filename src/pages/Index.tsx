@@ -153,7 +153,7 @@ const Index = () => {
               Escolha como quer aprender. Combine teoria, prática e testes para dominar frações.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6" id="como-funciona">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
             {features.map((feature, index) => (
               <Link key={feature.title} to={feature.href}>
                 <Card className="h-full card-hover cursor-pointer group" style={{ animationDelay: `${index * 100}ms` }}>
