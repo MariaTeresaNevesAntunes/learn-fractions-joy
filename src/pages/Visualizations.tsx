@@ -22,6 +22,15 @@ const Visualizations = () => {
       <Header />
 
       <main className="container mx-auto px-4 py-8">
+        <div className="text-center mb-8">
+          <h1 className="font-display text-3xl md:text-4xl font-bold mb-3">
+            Visualizações Interativas de Frações
+          </h1>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Manipule pizzas e barras para ver as frações a ganhar forma e compare quantidades de forma visual.
+          </p>
+        </div>
+
         {/* Tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           {tabs.map((tab) => (

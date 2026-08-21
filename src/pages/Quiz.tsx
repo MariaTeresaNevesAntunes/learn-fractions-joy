@@ -88,6 +88,9 @@ const Quiz = () => {
         <Header />
 
         <main className="container mx-auto px-4 py-8 max-w-2xl">
+          <h1 className="font-display text-3xl md:text-4xl font-bold mb-6 text-center">
+            Resultado do Quiz de Frações
+          </h1>
           <Card className="text-center animate-scale-in">
             <CardHeader>
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -163,6 +166,9 @@ const Quiz = () => {
         </header>
 
         <main className="container mx-auto px-4 py-8 max-w-2xl">
+          <h1 className="font-display text-2xl md:text-3xl font-bold mb-6 text-center">
+            Quiz de Frações
+          </h1>
           <Card className="animate-fade-in">
             <CardHeader>
               <CardTitle className="font-display text-xl">{question.question}</CardTitle>
