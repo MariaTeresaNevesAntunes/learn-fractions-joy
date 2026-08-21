@@ -14,7 +14,7 @@ const Terms = () => {
           </Link>
           <div className="flex items-center gap-2">
             <FileText className="h-6 w-6 text-primary" />
-            <h1 className="text-xl font-bold">Termos de Uso</h1>
+            <h1 className="text-xl font-bold">Termos de Utilização</h1>
           </div>
         </div>
       </header>
@@ -22,14 +22,14 @@ const Terms = () => {
       <main className="container mx-auto px-4 py-8 max-w-3xl">
         <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
           <p className="text-muted-foreground text-lg">
-            Última atualização: {new Date().toLocaleDateString('pt-BR')}
+            Última atualização: {new Date().toLocaleDateString('pt-PT')}
           </p>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">1. Aceitação dos Termos</h2>
             <p className="text-muted-foreground">
-              Ao acessar e usar o FraçõesApp, você concorda em cumprir estes Termos de Uso. 
-              Se você não concordar com qualquer parte destes termos, não deve usar o aplicativo.
+              Ao aceder e utilizar o FraçõesApp, concorda em cumprir estes Termos de Utilização. 
+              Se não concordar com qualquer parte destes termos, não deve usar a aplicação.
             </p>
           </section>
 
@@ -37,7 +37,7 @@ const Terms = () => {
             <h2 className="text-2xl font-semibold text-foreground">2. Descrição do Serviço</h2>
             <p className="text-muted-foreground">
               O FraçõesApp é uma plataforma educacional gratuita dedicada ao ensino de frações 
-              matemáticas. O aplicativo oferece:
+              matemáticas. A aplicação oferece:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Conteúdo teórico sobre frações</li>
@@ -51,13 +51,13 @@ const Terms = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">3. Uso Permitido</h2>
             <p className="text-muted-foreground">
-              Você pode usar o FraçõesApp para fins educacionais pessoais ou em ambiente escolar. 
+              Pode utilizar o FraçõesApp para fins educacionais pessoais ou em ambiente escolar. 
               É permitido:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Acessar o conteúdo educacional</li>
               <li>Realizar exercícios e quizzes</li>
-              <li>Compartilhar o link do aplicativo</li>
+              <li>Partilhar o link da aplicação</li>
               <li>Usar como ferramenta de apoio ao ensino</li>
             </ul>
           </section>
@@ -65,13 +65,13 @@ const Terms = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">4. Restrições de Uso</h2>
             <p className="text-muted-foreground">
-              Ao usar o aplicativo, você concorda em não:
+              Ao usar a aplicação, concorda em não:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Copiar ou redistribuir o conteúdo sem autorização</li>
-              <li>Tentar acessar sistemas ou dados não autorizados</li>
-              <li>Usar o aplicativo para fins ilegais</li>
-              <li>Interferir no funcionamento normal do aplicativo</li>
+              <li>Tentar aceder a sistemas ou dados não autorizados</li>
+              <li>Usar a aplicação para fins ilegais</li>
+              <li>Interferir no funcionamento normal da aplicação</li>
             </ul>
           </section>
 
@@ -79,7 +79,7 @@ const Terms = () => {
             <h2 className="text-2xl font-semibold text-foreground">5. Propriedade Intelectual</h2>
             <p className="text-muted-foreground">
               Todo o conteúdo do FraçõesApp, incluindo textos, gráficos, logos e código, 
-              é protegido por direitos autorais. O uso do aplicativo não transfere nenhum 
+              é protegido por direitos de autor. O uso da aplicação não transfere nenhum 
               direito de propriedade intelectual.
             </p>
           </section>
@@ -87,8 +87,8 @@ const Terms = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">6. Isenção de Garantias</h2>
             <p className="text-muted-foreground">
-              O aplicativo é fornecido "como está", sem garantias de qualquer tipo. 
-              Não garantimos que o aplicativo estará sempre disponível ou livre de erros. 
+              A aplicação é fornecido "como está", sem garantias de qualquer tipo. 
+              Não garantimos que a aplicação estará sempre disponível ou livre de erros. 
               O conteúdo educacional é fornecido para fins informativos e não substitui 
               orientação pedagógica profissional.
             </p>
@@ -98,7 +98,7 @@ const Terms = () => {
             <h2 className="text-2xl font-semibold text-foreground">7. Limitação de Responsabilidade</h2>
             <p className="text-muted-foreground">
               Não nos responsabilizamos por quaisquer danos diretos, indiretos, incidentais 
-              ou consequenciais resultantes do uso ou impossibilidade de uso do aplicativo.
+              ou consequenciais resultantes do uso ou impossibilidade de uso da aplicação.
             </p>
           </section>
 
@@ -106,16 +106,16 @@ const Terms = () => {
             <h2 className="text-2xl font-semibold text-foreground">8. Modificações</h2>
             <p className="text-muted-foreground">
               Reservamo-nos o direito de modificar estes termos a qualquer momento. 
-              Alterações significativas serão comunicadas através do aplicativo. 
+              Alterações significativas serão comunicadas através da aplicação. 
               O uso continuado após modificações constitui aceitação dos novos termos.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">9. Contato</h2>
+            <h2 className="text-2xl font-semibold text-foreground">9. Contacto</h2>
             <p className="text-muted-foreground">
-              Para dúvidas sobre estes termos de uso, entre em contato conosco através da 
-              nossa <Link to="/contato" className="text-primary hover:underline">página de contato</Link>.
+              Para dúvidas sobre estes termos de uso, entre em contacto connosco através da 
+              nossa <Link to="/contacto" className="text-primary hover:underline">página de contacto</Link>.
             </p>
           </section>
         </div>

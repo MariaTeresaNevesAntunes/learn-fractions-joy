@@ -22,7 +22,7 @@ const Privacy = () => {
       <main className="container mx-auto px-4 py-8 max-w-3xl">
         <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
           <p className="text-muted-foreground text-lg">
-            Última atualização: {new Date().toLocaleDateString('pt-BR')}
+            Última atualização: {new Date().toLocaleDateString('pt-PT')}
           </p>
 
           <section className="space-y-4">
@@ -160,7 +160,7 @@ const Privacy = () => {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">11. Contato</h2>
+            <h2 className="text-2xl font-semibold text-foreground">11. Contacto</h2>
             <p className="text-muted-foreground">
               Para questões sobre esta Política de Privacidade ou sobre os seus dados, contacte-nos:
             </p>
@@ -170,7 +170,7 @@ const Privacy = () => {
                 E-mail: <a href="mailto:mtna.fracoes@gmail.com" className="text-primary hover:underline">mtna.fracoes@gmail.com</a>
               </p>
               <p className="text-muted-foreground">
-                Página de Contato: <Link to="/contato" className="text-primary hover:underline">Formulário de Contato</Link>
+                Página de Contacto: <Link to="/contacto" className="text-primary hover:underline">Formulário de Contacto</Link>
               </p>
             </div>
           </section>
@@ -181,7 +181,7 @@ const Privacy = () => {
             Política de Cookies
           </Link>
           <Link to="/termos" className="text-primary hover:underline">
-            Termos de Uso
+            Termos de Utilização
           </Link>
         </div>
       </main>

@@ -22,7 +22,7 @@ const Cookies = () => {
       <main className="container mx-auto px-4 py-8 max-w-3xl">
         <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
           <p className="text-muted-foreground text-lg">
-            Última atualização: {new Date().toLocaleDateString('pt-BR')}
+            Última atualização: {new Date().toLocaleDateString('pt-PT')}
           </p>
 
           <section className="space-y-4">
@@ -171,7 +171,7 @@ const Cookies = () => {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">6. Contato</h2>
+            <h2 className="text-2xl font-semibold text-foreground">6. Contacto</h2>
             <p className="text-muted-foreground">
               Para questões sobre esta Política de Cookies, contacte-nos:
             </p>
@@ -189,7 +189,7 @@ const Cookies = () => {
             Política de Privacidade
           </Link>
           <Link to="/termos" className="text-primary hover:underline">
-            Termos de Uso
+            Termos de Utilização
           </Link>
         </div>
       </main>

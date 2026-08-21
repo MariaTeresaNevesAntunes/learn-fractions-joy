@@ -100,7 +100,7 @@ const Quiz = () => {
                 {percentage >= 70 ? 'Parabéns!' : 'Continue Praticando!'}
               </CardTitle>
               <CardDescription>
-                Você completou o quiz
+                Completou o quiz
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -109,8 +109,8 @@ const Quiz = () => {
               </div>
               <Progress value={percentage} className="h-4" />
               <p className="text-muted-foreground">
-                {percentage >= 90 ? 'Excelente! Você domina o assunto!' :
-                 percentage >= 70 ? 'Muito bom! Você está no caminho certo.' :
+                {percentage >= 90 ? 'Excelente! Domina o assunto!' :
+                 percentage >= 70 ? 'Muito bom! Está no caminho certo.' :
                  percentage >= 50 ? 'Bom trabalho! Revise os pontos fracos.' :
                  'Não desista! Revise a teoria e tente novamente.'}
               </p>

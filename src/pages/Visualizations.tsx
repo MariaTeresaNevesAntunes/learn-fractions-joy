@@ -69,8 +69,8 @@ const Visualizations = () => {
                 <h3 className="font-semibold text-foreground mb-4">💡 Dica</h3>
                 <p className="text-muted-foreground">
                   A representação em pizza é ótima para visualizar frações como "partes de um todo". 
-                  Cada fatia representa uma parte igual do círculo completo. Quando você seleciona 
-                  fatias, está escolhendo quantas partes do total você quer representar.
+                  Cada fatia representa uma parte igual do círculo completo. Quando seleciona 
+                  fatias, está a escolher quantas partes do total quer representar.
                 </p>
               </div>
             </div>

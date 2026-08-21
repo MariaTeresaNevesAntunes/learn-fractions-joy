@@ -183,7 +183,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl font-bold mb-4">Visualize Frações</h2>
-            <p className="text-muted-foreground">Frações ficam mais fáceis quando você pode vê-las!</p>
+            <p className="text-muted-foreground">As frações ficam mais fáceis quando as consegue ver!</p>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
             {[
@@ -325,8 +325,8 @@ const Index = () => {
               <Link to="/termos" className="text-muted-foreground hover:text-foreground transition-colors">
                 Termos
               </Link>
-              <Link to="/contato" className="text-muted-foreground hover:text-foreground transition-colors">
-                Contato
+              <Link to="/contacto" className="text-muted-foreground hover:text-foreground transition-colors">
+                Contacto
               </Link>
             </nav>
           </div>

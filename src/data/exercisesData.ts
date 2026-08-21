@@ -27,10 +27,10 @@ export const exercises: Exercise[] = [
   {
     id: 'ex-1-2',
     moduleId: 'module-1',
-    question: 'Se um bolo foi dividido em 6 partes e você comeu 2, qual fração representa o que você comeu?',
+    question: 'Se um bolo foi dividido em 6 partes e comeu 2, que fração representa o que comeu?',
     options: ['6/2', '2/6', '4/6', '2/4'],
     correctAnswer: 1,
-    explanation: '2/6 - Você comeu 2 partes (numerador) de um total de 6 partes (denominador).',
+    explanation: '2/6 - Comeu 2 partes (numerador) de um total de 6 partes (denominador).',
     difficulty: 'easy',
   },
   {
