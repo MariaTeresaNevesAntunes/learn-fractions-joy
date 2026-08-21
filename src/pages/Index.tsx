@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Book, PenTool, Brain, Layers, ArrowRight, CheckCircle, PieChart } from "lucide-react";
+import { Book, PenTool, Brain, Layers, ArrowRight, CheckCircle, PieChart, PlayCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -45,6 +45,13 @@ const Index = () => {
       href: "/visualizacoes",
       color: "bg-chart-1/10 text-chart-1",
     },
+    {
+      icon: PlayCircle,
+      title: "Vídeos",
+      description: "Assista a exercícios resolvidos passo a passo",
+      href: "/videos",
+      color: "bg-info/10 text-info",
+    },
   ];
 
   return (
@@ -81,6 +88,9 @@ const Index = () => {
             </Link>
             <Link to="/visualizacoes" className="text-muted-foreground hover:text-foreground transition-colors">
               Visualizações
+            </Link>
+            <Link to="/videos" className="text-muted-foreground hover:text-foreground transition-colors">
+              Vídeos
             </Link>
           </nav>
         </div>
@@ -146,7 +156,7 @@ const Index = () => {
               Escolha como quer aprender. Combine teoria, prática e testes para dominar frações.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
             {features.map((feature, index) => (
               <Link key={feature.title} to={feature.href}>
                 <Card className="h-full card-hover cursor-pointer group" style={{ animationDelay: `${index * 100}ms` }}>

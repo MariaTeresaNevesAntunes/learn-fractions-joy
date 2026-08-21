@@ -48,7 +48,13 @@ const Header = () => {
             Flashcards
           </Link>
           <Link 
-            to="/sobre" 
+            to="/videos" 
+            className={isActive('/videos') ? 'text-foreground font-medium' : 'text-muted-foreground hover:text-foreground transition-colors'}
+          >
+            Vídeos
+          </Link>
+          <Link 
+            to="/sobre"
             className={isActive('/sobre') ? 'text-foreground font-medium' : 'text-muted-foreground hover:text-foreground transition-colors'}
           >
             Sobre
