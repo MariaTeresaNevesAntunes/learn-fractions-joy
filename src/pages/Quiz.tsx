@@ -97,7 +97,7 @@ const Quiz = () => {
                 <Trophy className={`w-10 h-10 ${percentage >= 70 ? 'text-accent' : 'text-primary'}`} />
               </div>
               <CardTitle className="font-display text-3xl">
-                {percentage >= 70 ? 'Parabéns!' : 'Continue Praticando!'}
+                {percentage >= 70 ? 'Parabéns!' : 'Continue a Praticar!'}
               </CardTitle>
               <CardDescription>
                 Completou o quiz
