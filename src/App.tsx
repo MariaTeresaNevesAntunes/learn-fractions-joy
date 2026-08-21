@@ -10,7 +10,6 @@ import Exercises from "./pages/Exercises";
 import Quiz from "./pages/Quiz";
 import Flashcards from "./pages/Flashcards";
 import Visualizations from "./pages/Visualizations";
-import Videos from "./pages/Videos";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
@@ -34,7 +33,6 @@ const App = () => (
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/flashcards" element={<Flashcards />} />
           <Route path="/visualizacoes" element={<Visualizations />} />
-          <Route path="/videos" element={<Videos />} />
           <Route path="/privacidade" element={<Privacy />} />
           <Route path="/termos" element={<Terms />} />
           <Route path="/contato" element={<Contact />} />

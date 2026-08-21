@@ -31,11 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learn-fractions-joy.com/videos</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://learn-fractions-joy.com/sobre</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
