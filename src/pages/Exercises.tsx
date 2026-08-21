@@ -144,7 +144,7 @@ const Exercises = () => {
                       </CardTitle>
                     </div>
                     {isAnswered && (
-                      <Button variant="ghost" size="sm" onClick={() => resetExercise(exercise.id)}>
+                      <Button variant="ghost" size="sm" aria-label="Reiniciar exercício" onClick={() => resetExercise(exercise.id)}>
                         <RotateCcw className="w-4 h-4" />
                       </Button>
                     )}

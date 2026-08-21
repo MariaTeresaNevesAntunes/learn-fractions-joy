@@ -78,12 +78,12 @@ const TheoryModule = () => {
           {module.content.sections.map((section, index) => (
             <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
               <CardHeader>
-                <CardTitle className="font-display text-xl flex items-center gap-2">
+                <h2 className="font-display text-xl font-semibold flex items-center gap-2">
                   <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold">
                     {index + 1}
                   </span>
                   {section.title}
-                </CardTitle>
+                </h2>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-foreground leading-relaxed">{section.text}</p>

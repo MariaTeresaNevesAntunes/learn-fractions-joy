@@ -29,15 +29,26 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Envia a mensagem por e-mail através do cliente de correio do utilizador
+    const body = [
+      `Nome: ${formData.name}`,
+      `E-mail: ${formData.email}`,
+      "",
+      formData.message,
+    ].join("\n");
+
+    const mailto = `mailto:mtna.fracoes@gmail.com?subject=${encodeURIComponent(
+      formData.subject || "Contato via site MTNA"
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailto;
 
     toast({
-      title: "Mensagem enviada!",
-      description: "Obrigado pelo contato. Responderemos em breve.",
+      title: "A abrir o seu e-mail...",
+      description:
+        "A mensagem foi preparada no seu programa de e-mail. Confirme o envio para mtna.fracoes@gmail.com.",
     });
 
-    setFormData({ name: "", email: "", subject: "", message: "" });
     setIsSubmitting(false);
   };
 
@@ -46,7 +57,7 @@ const Contact = () => {
       <header className="border-b border-border/50 bg-background/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4 flex items-center gap-4">
           <Link to="/">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" aria-label="Voltar ao início">
               <ArrowLeft className="h-5 w-5" />
             </Button>
           </Link>
