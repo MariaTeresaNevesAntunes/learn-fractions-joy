@@ -168,7 +168,7 @@ const Index = () => {
                   </CardHeader>
                   <CardContent>
                     <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Aceder <ArrowRight className="w-4 h-4" />
+                      Acessar <ArrowRight className="w-4 h-4" />
                     </span>
                   </CardContent>
                 </Card>
