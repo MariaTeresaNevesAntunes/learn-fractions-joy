@@ -213,7 +213,7 @@ const About = () => {
             Entre em Contacto
           </h2>
           <Link 
-            to="/contato" 
+            to="/contacto" 
             className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
             Contactar
@@ -228,7 +228,7 @@ const About = () => {
           <div className="flex justify-center gap-6 mt-4">
             <Link to="/privacidade" className="hover:text-foreground transition-colors">Privacidade</Link>
             <Link to="/termos" className="hover:text-foreground transition-colors">Termos</Link>
-            <Link to="/contato" className="hover:text-foreground transition-colors">Contacto</Link>
+            <Link to="/contacto" className="hover:text-foreground transition-colors">Contacto</Link>
           </div>
         </div>
       </footer>

@@ -44,8 +44,8 @@ const routeMeta: Record<string, Meta> = {
     description:
       "Conheça a autora do projeto, licenciada em Matemática, e a missão de facilitar o ensino e a aprendizagem da matemática.",
   },
-  "/contato": {
-    title: `Contato | ${SUFFIX}`,
+  "/contacto": {
+    title: `Contacto | ${SUFFIX}`,
     description:
       "Envie a sua dúvida, sugestão ou pedido de colaboração para mtna.fracoes@gmail.com.",
   },
@@ -55,7 +55,7 @@ const routeMeta: Record<string, Meta> = {
       "Como tratamos dados, cookies e publicidade nesta plataforma educativa sobre frações.",
   },
   "/termos": {
-    title: `Termos de Uso | ${SUFFIX}`,
+    title: `Termos de Utilização | ${SUFFIX}`,
     description:
       "Condições de utilização da plataforma educativa MTNA sobre frações.",
   },

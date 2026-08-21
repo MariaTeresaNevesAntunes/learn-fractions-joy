@@ -38,7 +38,7 @@ const Contact = () => {
     ].join("\n");
 
     const mailto = `mailto:mtna.fracoes@gmail.com?subject=${encodeURIComponent(
-      formData.subject || "Contato via site MTNA"
+      formData.subject || "Contacto via site MTNA"
     )}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailto;
@@ -63,7 +63,7 @@ const Contact = () => {
           </Link>
           <div className="flex items-center gap-2">
             <MessageSquare className="h-6 w-6 text-primary" />
-            <h1 className="text-xl font-bold">Contato</h1>
+            <h1 className="text-xl font-bold">Contacto</h1>
           </div>
         </div>
       </header>
@@ -71,7 +71,7 @@ const Contact = () => {
       <main className="container mx-auto px-4 py-8 max-w-2xl">
         {/* Direct Contact Info */}
         <div className="bg-primary/5 rounded-xl p-6 mb-6 text-center border">
-          <h2 className="font-semibold text-lg mb-2">Contato Direto</h2>
+          <h2 className="font-semibold text-lg mb-2">Contacto Direto</h2>
           <p className="text-muted-foreground mb-3">
             Pode contactar-me diretamente através do e-mail:
           </p>
@@ -91,7 +91,7 @@ const Contact = () => {
           <CardHeader className="text-center">
             <CardTitle className="text-2xl flex items-center justify-center gap-2">
               <Mail className="h-6 w-6 text-primary" />
-              Formulário de Contato
+              Formulário de Contacto
             </CardTitle>
             <CardDescription>
               Ou utilize o formulário abaixo para enviar uma mensagem:
@@ -177,7 +177,7 @@ const Contact = () => {
 
         <div className="mt-8 text-center text-sm text-muted-foreground">
           <p>
-            Ao enviar uma mensagem, você concorda com nossa{" "}
+            Ao enviar uma mensagem, concorda com a nossa{" "}
             <Link to="/privacidade" className="text-primary hover:underline">
               Política de Privacidade
             </Link>
