@@ -9,21 +9,22 @@ interface VideoItem {
   youtubeId: string;
 }
 
+// Substitua os placeholders abaixo pelos IDs reais dos vídeos do YouTube.
 const sampleVideos: VideoItem[] = [
   {
     id: 'v1',
     title: 'Introdução às Frações - Exercício Resolvido',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: '',
   },
   {
     id: 'v2',
     title: 'Como Comparar Frações - Exercício Resolvido',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: '',
   },
   {
     id: 'v3',
     title: 'Operações com Frações - Exercício Resolvido',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: '',
   },
 ];
 
