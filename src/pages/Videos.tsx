@@ -55,13 +55,20 @@ const Videos = () => {
         <section aria-label="Galeria de vídeos" className="video-gallery mb-16">
           {sampleVideos.map((video) => (
             <article key={video.id} className="video-card">
-              <iframe
-                src={`https://www.youtube.com/embed/${video.youtubeId}`}
-                title={video.title}
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              {video.youtubeId ? (
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                  title={video.title}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              ) : (
+                <div className="flex flex-col items-center justify-center bg-muted rounded-lg" style={{ height: 200 }}>
+                  <PlayCircle className="w-12 h-12 text-muted-foreground mb-2" />
+                  <span className="text-sm text-muted-foreground">Vídeo a ser adicionado</span>
+                </div>
+              )}
               <h3>{video.title}</h3>
             </article>
           ))}
