@@ -55,7 +55,7 @@ const Terms = () => {
               É permitido:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>Acessar o conteúdo educacional</li>
+              <li>Aceder o conteúdo educacional</li>
               <li>Realizar exercícios e quizzes</li>
               <li>Partilhar o link da aplicação</li>
               <li>Usar como ferramenta de apoio ao ensino</li>
