@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
+import RouteSeo from "./components/RouteSeo";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <RouteSeo />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/teoria" element={<Theory />} />
