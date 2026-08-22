@@ -17,6 +17,7 @@ import About from "./pages/About";
 import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 import RouteSeo from "./components/RouteSeo";
+import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -38,11 +39,15 @@ const App = () => (
           <Route path="/privacidade" element={<Privacy />} />
           <Route path="/termos" element={<Terms />} />
           <Route path="/contacto" element={<Contact />} />
-          <Route path="/contato" element={<Navigate to="/contacto" replace />} />
+          <Route
+            path="/contato"
+            element={<Navigate to="/contacto" replace />}
+          />
           <Route path="/sobre" element={<About />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
