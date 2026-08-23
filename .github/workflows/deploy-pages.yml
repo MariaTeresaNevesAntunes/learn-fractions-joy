@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - restore-videos-adsense
   workflow_dispatch:
 
 permissions:
