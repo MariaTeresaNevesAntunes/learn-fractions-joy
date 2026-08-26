@@ -10,9 +10,9 @@ type Meta = { title: string; description: string };
 
 const routeMeta: Record<string, Meta> = {
   "/": {
-    title: "MTNA - Aprenda Frações | Plataforma Educativa de Matemática",
+    title: "MTNA - Aprenda Frações com Maria Teresa Neves Antunes",
     description:
-      "Aprenda frações de forma interativa e gratuita: teoria, exercícios, quizzes, flashcards, visualizações e vídeos de exercícios resolvidos.",
+      "Aprenda frações de forma simples, interativa e gratuita. Teoria, exercícios, quizzes, flashcards e visualizações para crianças e adultos dominarem as frações com confiança.",
   },
   "/teoria": {
     title: `Teoria das Frações — Módulos Progressivos | ${SUFFIX}`,
