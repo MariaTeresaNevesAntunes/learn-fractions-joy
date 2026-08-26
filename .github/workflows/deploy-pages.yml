@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - restore-videos-adsense
   workflow_dispatch:
 
 permissions:
@@ -28,15 +27,16 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: Fraction Fiesta/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
-        working-directory: Fraction Fiesta
         run: npm ci
 
       - name: Build
-        working-directory: Fraction Fiesta
         run: npm run build
+
+      - name: SPA fallback for client-side routes
+        run: cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -44,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Fraction Fiesta/dist
+          path: dist
 
   deploy:
     environment:
