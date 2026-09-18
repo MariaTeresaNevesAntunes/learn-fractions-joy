@@ -35,6 +35,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Generate crawlable pages for client-side routes
+        run: |
+          for route in teoria exercicios quiz flashcards visualizacoes sobre contacto privacidade termos cookies; do
+            mkdir -p "dist/$route"
+            cp dist/index.html "dist/$route/index.html"
+          done
+
       - name: SPA fallback for client-side routes
         run: cp dist/index.html dist/404.html
 
