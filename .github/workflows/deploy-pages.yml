@@ -37,10 +37,15 @@ jobs:
 
       - name: Generate crawlable pages for client-side routes
         run: |
-          for route in teoria exercicios quiz flashcards visualizacoes sobre contacto privacidade termos cookies; do
+          for route in teoria teoria/module-1 teoria/module-2 teoria/module-3 teoria/module-4 teoria/module-5 teoria/module-6 teoria/module-7 teoria/module-8 exercicios quiz flashcards visualizacoes sobre contacto contato privacidade termos cookies; do
             mkdir -p "dist/$route"
             cp dist/index.html "dist/$route/index.html"
           done
+
+      - name: Add robots and sitemap to dist
+        run: |
+          cp public/robots.txt dist/robots.txt
+          cp public/sitemap.xml dist/sitemap.xml
 
       - name: SPA fallback for client-side routes
         run: cp dist/index.html dist/404.html

@@ -6,7 +6,12 @@ const SITE_URL = "https://learn-fractions-joy.com";
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 const SUFFIX = "MTNA - Aprenda Frações";
 
-type Meta = { title: string; description: string };
+type Meta = {
+  title: string;
+  description: string;
+  indexable?: boolean;
+  type?: "website" | "article";
+};
 
 const routeMeta: Record<string, Meta> = {
   "/": {
@@ -69,44 +74,80 @@ const routeMeta: Record<string, Meta> = {
 const RouteSeo = () => {
   const { pathname } = useLocation();
   const { moduleId } = useParams();
+  const normalizedPath =
+    pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
 
-  let meta = routeMeta[pathname];
+  let meta = routeMeta[normalizedPath];
+  let isTheoryModule = false;
 
-  if (!meta && pathname.startsWith("/teoria/")) {
-    const id = moduleId ?? pathname.split("/")[2];
+  if (!meta && normalizedPath.startsWith("/teoria/")) {
+    const id = moduleId ?? normalizedPath.split("/")[2];
     const mod = theoryModules.find((m) => m.id === id);
     meta = mod
       ? {
           title: `${mod.title} — Teoria das Frações | ${SUFFIX}`,
           description: mod.description,
+          type: "article",
         }
       : {
           title: `Módulo de Teoria | ${SUFFIX}`,
           description: "Módulo teórico sobre frações.",
+          indexable: false,
         };
+    isTheoryModule = Boolean(mod);
   }
 
   if (!meta) {
     meta = {
       title: `Página não encontrada | ${SUFFIX}`,
       description: "A página que procura não existe.",
+      indexable: false,
     };
   }
 
-  const url = `${SITE_URL}${pathname === "/" ? "/" : pathname}`;
+  const isAlias = normalizedPath === "/contato";
+  const canonicalPath = isAlias ? "/contacto" : normalizedPath;
+  const url = `${SITE_URL}${canonicalPath === "/" ? "/" : canonicalPath}`;
+  const indexable = meta.indexable !== false && !isAlias;
+  const schema = isTheoryModule
+    ? {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        name: meta.title,
+        description: meta.description,
+        url,
+        inLanguage: "pt-PT",
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+        educationalUse: "instruction",
+        learningResourceType: "lesson",
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: meta.title,
+        description: meta.description,
+        url,
+        inLanguage: "pt-PT",
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+      };
 
   return (
     <Helmet>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
+      <meta name="robots" content={indexable ? "index, follow" : "noindex, follow"} />
       <link rel="canonical" href={url} />
+      <meta property="og:type" content={meta.type ?? "website"} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:description" content={meta.description} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={OG_IMAGE} />
+      <meta property="og:locale" content="pt_PT" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={OG_IMAGE} />
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );
 };
