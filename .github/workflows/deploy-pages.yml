@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 permissions:
@@ -37,7 +37,7 @@ jobs:
 
       - name: Generate crawlable pages for client-side routes
         run: |
-          for route in teoria teoria/module-1 teoria/module-2 teoria/module-3 teoria/module-4 teoria/module-5 teoria/module-6 teoria/module-7 teoria/module-8 exercicios quiz flashcards visualizacoes sobre contacto contato privacidade termos cookies; do
+          for route in teoria teoria/module-1 teoria/module-2 teoria/module-3 teoria/module-4 teoria/module-5 teoria/module-6 teoria/module-7 teoria/module-8 exercicios quiz flashcards videos visualizacoes sobre contacto contato privacidade termos cookies; do
             mkdir -p "dist/$route"
             cp dist/index.html "dist/$route/index.html"
           done
