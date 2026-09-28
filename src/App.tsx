@@ -9,6 +9,7 @@ import TheoryModule from "./pages/TheoryModule";
 import Exercises from "./pages/Exercises";
 import Quiz from "./pages/Quiz";
 import Flashcards from "./pages/Flashcards";
+import Videos from "./pages/Videos";
 import Visualizations from "./pages/Visualizations";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/exercicios" element={<Exercises />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/flashcards" element={<Flashcards />} />
+          <Route path="/videos" element={<Videos />} />
           <Route path="/visualizacoes" element={<Visualizations />} />
           <Route path="/privacidade" element={<Privacy />} />
           <Route path="/termos" element={<Terms />} />

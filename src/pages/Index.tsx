@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import {
-  Book,
-  PenTool,
-  Brain,
-  Layers,
+  BookOpen,
+  Calculator,
+  CircleHelp,
+  Layers3,
   ArrowRight,
   CheckCircle,
   PieChart,
@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { useProgress } from "@/hooks/useProgress";
+import AdSensePlaceholder from "@/components/AdSensePlaceholder";
 
 const Index = () => {
   const { getOverallProgress, progress } = useProgress();
@@ -64,9 +65,16 @@ const Index = () => {
       icon: PlayCircle,
       title: "Vídeos",
       description: "Assista a exercícios resolvidos passo a passo",
-      href: "#videos",
+      href: "/videos",
       color: "bg-info/10 text-info",
     },
+  ];
+
+  const heroLinks = [
+    { title: "Teoria", href: "/teoria", icon: BookOpen },
+    { title: "Exercícios", href: "/exercicios", icon: Calculator },
+    { title: "Quizzes", href: "/quiz", icon: CircleHelp },
+    { title: "Flashcards", href: "/flashcards", icon: Layers3 },
   ];
 
   return (
@@ -127,34 +135,80 @@ const Index = () => {
             >
               Visualizações
             </Link>
+            <Link
+              to="/videos"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Vídeos
+            </Link>
           </nav>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 text-center">
-          <div className="animate-fade-in">
-            <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              📚 Aprendizado Interativo
-            </span>
-            <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              MTNA-Domine o Mundo das{" "}
-              <span className="text-primary">Frações</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Do básico ao avançado, aprenda frações de forma interativa com
-              teoria clara, exercícios práticos, quizzes e flashcards.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="gap-2">
-                <Link to="/teoria">
-                  Começar a Aprender <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/quiz">Testar Conhecimentos</Link>
-              </Button>
+      <section className="premium-hero-wrap">
+        <div className="premium-hero-bg" />
+        <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
+          <div className="premium-hero">
+            <div className="premium-hero-copy animate-fade-in">
+              <div className="hero-brand-mark">MTNA</div>
+
+              <h1 className="premium-title">
+                <span className="premium-title-main">MTNA —</span>
+                <span className="premium-title-accent">Aprenda Frações</span>
+              </h1>
+
+              <div className="premium-links">
+                {heroLinks.map(({ title, href, icon: Icon }) => (
+                  <Link key={title} to={href} className="premium-link-item">
+                    <span className="premium-link-icon">
+                      <Icon className="w-5 h-5" />
+                    </span>
+                    <span>{title}</span>
+                  </Link>
+                ))}
+              </div>
+
+              <div className="premium-actions">
+                <Button asChild size="lg" className="gap-2 premium-primary-btn">
+                  <Link to="/teoria">
+                    Começar a Aprender <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="premium-secondary-btn"
+                >
+                  <Link to="/quiz">Testar Conhecimentos</Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="premium-hero-visual animate-fade-in">
+              <div className="pizza-shell">
+                <div className="pizza-circle">
+                  <div className="pizza-slice slice-one" />
+                  <div className="pizza-slice slice-two" />
+                  <div className="pizza-slice slice-three" />
+                  <div className="pizza-slice slice-four" />
+                  <span className="pizza-divider pizza-divider-vertical" />
+                  <span className="pizza-divider pizza-divider-horizontal" />
+                  <span className="pizza-dot pizza-dot-one" />
+                  <span className="pizza-dot pizza-dot-two" />
+                  <span className="pizza-dot pizza-dot-three" />
+                  <span className="pizza-dot pizza-dot-four" />
+                  <span className="pizza-dot pizza-dot-five" />
+                  <div className="pizza-center" />
+                </div>
+              </div>
+
+              <div className="fraction-block">
+                <span className="fraction-value fraction-num">3</span>
+                <span className="fraction-line" />
+                <span className="fraction-value fraction-den">4</span>
+              </div>
             </div>
           </div>
         </div>
@@ -230,6 +284,12 @@ const Index = () => {
       {/* Visual Demo Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
+          <div className="mb-8 max-w-3xl mx-auto">
+            <AdSensePlaceholder
+              title="Bloco de publicidade em destaque"
+              description="Área ideal para um anúncio responsivo do Google AdSense entre conteúdos pedagógicos."
+            />
+          </div>
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl font-bold mb-4">
               Visualize Frações
