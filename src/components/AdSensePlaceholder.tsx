@@ -19,7 +19,7 @@ const AdSensePlaceholder = ({
   compact = false,
   slot,
 }: AdSensePlaceholderProps) => {
-  const adRef = useRef<HTMLElement>(null);
+  const adRef = useRef<HTMLModElement>(null);
 
   useEffect(() => {
     if (!slot) return;

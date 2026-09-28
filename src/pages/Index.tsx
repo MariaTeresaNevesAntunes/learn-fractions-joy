@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import {
+  Book,
+  PenTool,
+  Brain,
+  Layers,
   BookOpen,
   Calculator,
   CircleHelp,
@@ -105,10 +109,7 @@ const Index = () => {
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <Link
-              to="/"
-              className="text-foreground font-medium"
-            >
+            <Link to="/" className="text-foreground font-medium">
               Início
             </Link>
             <Link
