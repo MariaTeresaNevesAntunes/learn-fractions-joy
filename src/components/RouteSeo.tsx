@@ -44,6 +44,11 @@ const routeMeta: Record<string, Meta> = {
     description:
       "Manipule pizzas e barras interativas para visualizar frações, comparar quantidades e compreender numerador e denominador.",
   },
+  "/videos": {
+    title: `Vídeos de Frações Resolvidos Passo a Passo | ${SUFFIX}`,
+    description:
+      "Assista a vídeos educativos de frações com explicações passo a passo para reforçar a teoria e a resolução de exercícios.",
+  },
   "/sobre": {
     title: `Sobre a Autora — Maria Teresa Neves Antunes | ${SUFFIX}`,
     description:
@@ -135,7 +140,10 @@ const RouteSeo = () => {
     <Helmet>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
-      <meta name="robots" content={indexable ? "index, follow" : "noindex, follow"} />
+      <meta
+        name="robots"
+        content={indexable ? "index, follow" : "noindex, follow"}
+      />
       <link rel="canonical" href={url} />
       <meta property="og:type" content={meta.type ?? "website"} />
       <meta property="og:title" content={meta.title} />

@@ -6,13 +6,23 @@ const CONSENT_KEY = "mtna-ads-consent";
 const ADSENSE_CLIENT = "ca-pub-8664195567929159";
 
 const loadAdSense = () => {
-  if (document.querySelector('script[data-mtna-adsense="true"]')) return;
+  const existingScript = document.querySelector(
+    'script[data-mtna-adsense="true"]',
+  );
+
+  if (existingScript) {
+    window.dispatchEvent(new Event("mtna-adsense-ready"));
+    return;
+  }
 
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`;
   script.crossOrigin = "anonymous";
   script.dataset.mtnaAdsense = "true";
+  script.addEventListener("load", () => {
+    window.dispatchEvent(new Event("mtna-adsense-ready"));
+  });
   document.head.appendChild(script);
 };
 

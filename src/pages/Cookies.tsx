@@ -194,7 +194,9 @@ const Cookies = () => {
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>
-                O seu progresso de aprendizado não será guardado entre sessões
+                O seu progresso de aprendizado continuará a ser guardado
+                localmente, quando essa funcionalidade estiver disponível no
+                navegador
               </li>
               <li>
                 Não serão carregados os cookies de publicidade do Google AdSense
