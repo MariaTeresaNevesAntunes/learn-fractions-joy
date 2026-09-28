@@ -9,42 +9,42 @@ const videoList = [
     category: "introducao",
     categoryLabel: "Introdução",
     title: "Introdução às Frações - Exercício Resolvido",
-    url: "https://www.youtube.com/embed/bjebqr-tBdU",
+    videoId: "bjebqr-tBdU",
   },
   {
     id: "v2",
     category: "comparar",
     categoryLabel: "Comparar",
     title: "Como Comparar Frações - Exercício Resolvido",
-    url: "https://www.youtube.com/embed/wq7-D3T5rlw",
+    videoId: "wq7-D3T5rlw",
   },
   {
     id: "v3",
     category: "operacoes",
     categoryLabel: "Operações",
     title: "Operações com Frações - Exercício Resolvido",
-    url: "https://www.youtube.com/embed/jW7cVOn0u7w",
+    videoId: "jW7cVOn0u7w",
   },
   {
     id: "v4",
     category: "exercicios",
     categoryLabel: "Exercícios",
     title: "Exercício Resolvido 4",
-    url: "https://www.youtube.com/embed/HS9UO5nKgdI",
+    videoId: "HS9UO5nKgdI",
   },
   {
     id: "v5",
     category: "exercicios",
     categoryLabel: "Exercícios",
     title: "Exercício Resolvido 5",
-    url: "https://www.youtube.com/embed/qroLyJgr4vU",
+    videoId: "qroLyJgr4vU",
   },
   {
     id: "v6",
     category: "exercicios",
     categoryLabel: "Exercícios",
     title: "Exercício Resolvido 6",
-    url: "https://www.youtube.com/embed/5dl5YXWMMb0",
+    videoId: "5dl5YXWMMb0",
   },
 ];
 
@@ -55,6 +55,12 @@ const filters = [
   { value: "operacoes", label: "Operações" },
   { value: "exercicios", label: "Exercícios" },
 ];
+
+const getEmbedUrl = (videoId: string) =>
+  `https://www.youtube-nocookie.com/embed/${videoId}?rel=0&origin=https%3A%2F%2Flearn-fractions-joy.com`;
+
+const getWatchUrl = (videoId: string) =>
+  `https://www.youtube.com/watch?v=${videoId}`;
 
 const Videos = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -112,12 +118,14 @@ const Videos = () => {
                 <iframe
                   loading="lazy"
                   title={featuredVideo.title}
-                  src={featuredVideo.url}
+                  src={getEmbedUrl(featuredVideo.videoId)}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
                 <div className="video-overlay">
                   <a
-                    href={featuredVideo.url}
+                    href={getWatchUrl(featuredVideo.videoId)}
                     target="_blank"
                     rel="noreferrer"
                     className="video-play-button"
@@ -146,12 +154,14 @@ const Videos = () => {
                 <iframe
                   loading="lazy"
                   title={video.title}
-                  src={video.url}
+                  src={getEmbedUrl(video.videoId)}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
                 <div className="video-overlay">
                   <a
-                    href={video.url}
+                    href={getWatchUrl(video.videoId)}
                     target="_blank"
                     rel="noreferrer"
                     className="video-play-button"
