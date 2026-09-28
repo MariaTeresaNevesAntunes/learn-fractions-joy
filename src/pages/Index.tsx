@@ -106,6 +106,12 @@ const Index = () => {
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link
+              to="/"
+              className="text-foreground font-medium"
+            >
+              Início
+            </Link>
+            <Link
               to="/teoria"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
