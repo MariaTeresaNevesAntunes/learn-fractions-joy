@@ -45,8 +45,6 @@ const Theory = () => {
         <div className="mb-8 max-w-3xl mx-auto">
           <AdSensePlaceholder
             compact
-            title="Publicidade entre módulos"
-            description="Espaço de anúncio otimizado para manter a leitura fluida e o layout limpo."
           />
         </div>
 

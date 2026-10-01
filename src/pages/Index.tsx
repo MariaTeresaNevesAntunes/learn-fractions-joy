@@ -293,8 +293,6 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="mb-8 max-w-3xl mx-auto">
             <AdSensePlaceholder
-              title="Bloco de publicidade em destaque"
-              description="Área ideal para um anúncio responsivo do Google AdSense entre conteúdos pedagógicos."
             />
           </div>
           <div className="text-center mb-12">
@@ -354,6 +352,107 @@ const Index = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="fraction-history-heading"
+        className="py-12 md:py-16"
+      >
+        <div className="container mx-auto px-4">
+          <article className="max-w-4xl mx-auto bg-card border rounded-2xl p-6 md:p-10 shadow-sm">
+            <div className="prose prose-lg max-w-none text-foreground/90">
+              <h2
+                id="fraction-history-heading"
+                className="font-display text-2xl md:text-3xl font-bold mb-6"
+              >
+                A Incrível História das Frações: Por que Razão as Inventámos?
+              </h2>
+
+              <p>
+                Hoje em dia, estamos habituados a ver números decimais e frações
+                em todo o lado: nas receitas de culinária, nos descontos das
+                lojas e nas aulas de matemática. Mas já se perguntou como é que
+                a humanidade geria as coisas antes de as frações existirem?
+              </p>
+
+              <p>
+                A verdade é que, durante muito tempo, os números inteiros (1, 2,
+                3...) eram mais do que suficientes. Se um caçador da Pré-História
+                apanhasse dois coelhos, eram dois coelhos. Não havia necessidade
+                de dividir um coelho em partes exatas. No entanto, à medida que
+                as civilizações evoluíram, surgiu um grande problema: a realidade
+                não é feita apenas de coisas inteiras.
+              </p>
+
+              <h3>O Antigo Egito e as Inundações do Rio Nilo</h3>
+
+              <p>
+                A verdadeira origem das frações como as conhecemos começou no
+                Antigo Egito, há cerca de 4000 anos. O motor da economia egípcia
+                era o Rio Nilo. Todos os anos, o rio transbordava e inundava as
+                margens, tornando as terras incrivelmente férteis para a
+                agricultura.
+              </p>
+
+              <p>
+                O problema era que, quando as águas baixavam, as marcações e
+                fronteiras dos terrenos agrícolas tinham desaparecido
+                completamente. Os matemáticos da altura — conhecidos como
+                "estiradores de cordas" — eram chamados para medir novamente as
+                terras e distribuí-las de forma justa entre os agricultores. Para
+                medir, eles utilizavam cordas com nós atados a distâncias iguais.
+                Mas quase nunca um terreno media exatamente um número inteiro de
+                nós. Para resolver este problema e evitar discussões entre os
+                agricultores, os egípcios tiveram de inventar uma forma de contar
+                as partes de uma unidade. Nasciam assim as primeiras frações.
+              </p>
+
+              <h3>A Evolução: Da Babilónia até aos Dias de Hoje</h3>
+
+              <p>
+                Enquanto os egípcios usavam frações com base no número 1, os
+                babilónios desenvolveram um sistema baseado no número 60. É
+                graças a eles que hoje dividimos uma hora em 60 minutos e um
+                minuto em 60 segundos! Pensar em "meia hora" como 30 minutos é,
+                no fundo, usar o sistema de frações da Babilónia.
+              </p>
+
+              <p>
+                Mais tarde, os matemáticos na Índia começaram a escrever as
+                frações colocando um número por cima do outro (o numerador e o
+                denominador), mas ainda não usavam o traço horizontal. Foram os
+                árabes que, séculos depois, introduziram a barra de fração que
+                usamos hoje para separar os dois números e indicar uma divisão.
+              </p>
+
+              <h3>Porque as Frações são uma Necessidade Absoluta?</h3>
+
+              <p>
+                Se não tivéssemos inventado as frações, o nosso mundo moderno
+                seria impossível. Elas resolvem três grandes necessidades
+                humanas:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Partilha Justa:</strong> Como dividir 3 pizas de forma
+                  exata por 4 amigos? Sem frações, alguém ficaria a perder.
+                </li>
+                <li>
+                  <strong>Precisão na Ciência e Construção:</strong> Na
+                  engenharia ou na medicina, medir coisas em "quase um metro"
+                  causaria desastres. Precisamos da precisão de frações
+                  milimétricas.
+                </li>
+                <li>
+                  <strong>Comércio e Economia:</strong> Desde calcular taxas de
+                  juro até dividir as ações de uma empresa, a economia global
+                  depende da divisão de partes de um todo.
+                </li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -467,24 +566,9 @@ const Index = () => {
                   url: "https://www.youtube.com/embed/wq7-D3T5rlw",
                 },
                 {
-                  id: "v3",
-                  title: "Operações com Frações - Exercício Resolvido",
-                  url: "https://www.youtube.com/embed/jW7cVOn0u7w",
-                },
-                {
                   id: "v4",
-                  title: "Exercício Resolvido 4",
+                  title: "Exercício Resolvido de Frações",
                   url: "https://www.youtube.com/embed/HS9UO5nKgdI",
-                },
-                {
-                  id: "v5",
-                  title: "Exercício Resolvido 5",
-                  url: "https://www.youtube.com/embed/qroLyJgr4vU",
-                },
-                {
-                  id: "v6",
-                  title: "Exercício Resolvido 6",
-                  url: "https://www.youtube.com/embed/5dl5YXWMMb0",
                 },
               ].map((video) => (
                 <article key={video.id} className="video-card">
@@ -508,7 +592,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
             <div className="text-center md:text-left">
               <p className="text-muted-foreground text-sm">
-                © 2024 MTNA - Domine as Frações. Desenvolvido por{" "}
+                © {new Date().getFullYear()} MTNA - Domine as Frações. Desenvolvido por{" "}
                 <strong>Maria Teresa Neves Antunes</strong>.
               </p>
               <p className="text-muted-foreground text-xs mt-1">

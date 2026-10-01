@@ -22,7 +22,7 @@ const Cookies = () => {
       <main className="container mx-auto px-4 py-8 max-w-3xl">
         <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
           <p className="text-muted-foreground text-lg">
-            Última atualização: {new Date().toLocaleDateString("pt-PT")}
+            Última atualização: 1 de outubro de 2026
           </p>
 
           <section className="space-y-4">
@@ -65,8 +65,8 @@ const Cookies = () => {
                   Cookies de Publicidade (Google AdSense)
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  O Google AdSense só é carregado após o seu consentimento e
-                  pode utilizar cookies para:
+                  O Google AdSense só é carregado depois de aceitar publicidade
+                  nas preferências deste site. Pode utilizar cookies para:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground text-sm mt-2 space-y-1">
                   <li>Personalizar anúncios com base nos seus interesses</li>
@@ -83,9 +83,11 @@ const Cookies = () => {
               3. Cookies de Terceiros
             </h2>
             <p className="text-muted-foreground">
-              Os cookies de terceiros só são utilizados para publicidade depois
-              de autorizar essa categoria e são geridos pelo Google. Para mais
-              informações:
+              O Google AdSense só é carregado depois de aceitar publicidade
+              nas preferências deste site. As páginas com vídeos incorporados
+              também estabelecem ligações aos serviços do YouTube, mesmo sem
+              iniciar a reprodução. Estes fornecedores têm políticas próprias
+              sobre a utilização de dados. Para mais informações:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>
@@ -110,6 +112,16 @@ const Cookies = () => {
               </li>
               <li>
                 <a
+                  href="https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Privacidade e dados no YouTube
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://adssettings.google.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -126,7 +138,10 @@ const Cookies = () => {
               4. Como Gerir Cookies
             </h2>
             <p className="text-muted-foreground">
-              Pode controlar e/ou eliminar cookies conforme desejar. Eis como:
+              Pode alterar a sua escolha relativa à publicidade no botão
+              «Preferências de privacidade», disponível no canto inferior
+              esquerdo do site. Também pode controlar e/ou eliminar cookies
+              através do navegador:
             </p>
 
             <div className="space-y-4">
@@ -151,10 +166,10 @@ const Cookies = () => {
 
               <div className="bg-muted/30 p-4 rounded-lg">
                 <h3 className="font-semibold text-foreground mb-2">
-                  Desativar Publicidade Personalizada
+                  Preferências de Publicidade do Google
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Para desativar a publicidade personalizada do Google:
+                  Para gerir as preferências de publicidade na sua Conta Google:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground text-sm mt-2 space-y-1">
                   <li>
