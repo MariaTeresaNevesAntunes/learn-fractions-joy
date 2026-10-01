@@ -19,32 +19,11 @@ const videoList = [
     videoId: "wq7-D3T5rlw",
   },
   {
-    id: "v3",
-    category: "operacoes",
-    categoryLabel: "Operações",
-    title: "Operações com Frações - Exercício Resolvido",
-    videoId: "jW7cVOn0u7w",
-  },
-  {
     id: "v4",
     category: "exercicios",
     categoryLabel: "Exercícios",
-    title: "Exercício Resolvido 4",
+    title: "Exercício Resolvido de Frações",
     videoId: "HS9UO5nKgdI",
-  },
-  {
-    id: "v5",
-    category: "exercicios",
-    categoryLabel: "Exercícios",
-    title: "Exercício Resolvido 5",
-    videoId: "qroLyJgr4vU",
-  },
-  {
-    id: "v6",
-    category: "exercicios",
-    categoryLabel: "Exercícios",
-    title: "Exercício Resolvido 6",
-    videoId: "5dl5YXWMMb0",
   },
 ];
 
@@ -52,7 +31,6 @@ const filters = [
   { value: "all", label: "Todos" },
   { value: "introducao", label: "Introdução" },
   { value: "comparar", label: "Comparar" },
-  { value: "operacoes", label: "Operações" },
   { value: "exercicios", label: "Exercícios" },
 ];
 
@@ -93,8 +71,6 @@ const Videos = () => {
 
         <div className="mb-8 max-w-3xl mx-auto">
           <AdSensePlaceholder
-            title="Anúncio responsivo"
-            description="Posição ideal para monetização do AdSense sem quebrar a experiência visual do usuário."
           />
         </div>
 
@@ -186,8 +162,6 @@ const Videos = () => {
         <div className="mt-10 max-w-3xl mx-auto">
           <AdSensePlaceholder
             compact
-            title="Publicidade entre vídeos"
-            description="Uma segunda posição natural para anúncios, sem prejudicar a leitura nem a navegação."
           />
         </div>
       </main>

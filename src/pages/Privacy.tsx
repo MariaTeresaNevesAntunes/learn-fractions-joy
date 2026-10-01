@@ -22,7 +22,7 @@ const Privacy = () => {
       <main className="container mx-auto px-4 py-8 max-w-3xl">
         <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
           <p className="text-muted-foreground text-lg">
-            Última atualização: {new Date().toLocaleDateString("pt-PT")}
+            Última atualização: 1 de outubro de 2026
           </p>
 
           <section className="space-y-4">
@@ -69,9 +69,9 @@ const Privacy = () => {
               3. Dados Coletados
             </h2>
             <p className="text-muted-foreground">
-              A nossa plataforma funciona inteiramente no seu navegador e
-              armazena dados apenas localmente no seu dispositivo usando
-              localStorage. Os dados armazenados incluem:
+              Não é necessário criar uma conta. O progresso de aprendizagem é
+              guardado localmente no navegador através de localStorage. Os dados
+              guardados incluem:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Progresso de aprendizado (módulos completados)</li>
@@ -79,6 +79,12 @@ const Privacy = () => {
               <li>Flashcards revisados</li>
               <li>Preferências de uso da plataforma</li>
             </ul>
+            <p className="text-muted-foreground">
+              Se nos contactar por e-mail, a mensagem e o endereço de e-mail
+              serão tratados através do seu serviço de correio eletrónico e
+              recebidos por nós para responder ao pedido. O site não recebe nem
+              guarda essas mensagens num servidor próprio.
+            </p>
           </section>
 
           <section className="space-y-4">
@@ -103,13 +109,15 @@ const Privacy = () => {
             <p className="text-muted-foreground">
               Esta plataforma pode utilizar o <strong>Google AdSense</strong>{" "}
               para exibir anúncios, mas só carrega o serviço depois de o
-              visitante autorizar os cookies de publicidade. Quando autorizado,
-              o Google AdSense pode utilizar cookies e tecnologias semelhantes
-              para:
+              visitante aceitar publicidade através das preferências de
+              privacidade do site. Quando autorizado, o Google AdSense e os
+              respetivos parceiros podem utilizar cookies e tecnologias
+              semelhantes para:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>
-                Exibir anúncios personalizados com base nos seus interesses
+                Exibir anúncios personalizados ou não personalizados,
+                consoante as preferências e os sinais de consentimento
               </li>
               <li>Limitar o número de vezes que vê um anúncio</li>
               <li>Medir a eficácia das campanhas publicitárias</li>
@@ -127,6 +135,11 @@ const Privacy = () => {
               </a>
               .
             </p>
+            <p className="text-muted-foreground">
+              Algumas páginas incorporam vídeos do YouTube. Ao visitar essas
+              páginas, o navegador liga-se aos serviços do YouTube; a utilização
+              desses serviços rege-se pelas políticas do Google e do YouTube.
+            </p>
           </section>
 
           <section className="space-y-4">
@@ -134,8 +147,9 @@ const Privacy = () => {
               6. Gestão de Cookies
             </h2>
             <p className="text-muted-foreground">
-              Pode gerir as suas preferências de cookies a qualquer momento
-              através das configurações do seu navegador. Também pode visitar a
+              Pode alterar a sua escolha relativa à publicidade a qualquer
+              momento no botão «Preferências de privacidade», disponível no
+              canto inferior esquerdo do site. Também pode visitar a
               nossa{" "}
               <Link to="/cookies" className="text-primary hover:underline">
                 Política de Cookies
@@ -169,6 +183,14 @@ const Privacy = () => {
               <li>
                 Dados de cookies utilizados pelo Google AdSense para fins
                 publicitários, quando autorizado
+              </li>
+              <li>
+                Dados tratados pelo YouTube quando uma página com vídeos
+                incorporados é visitada
+              </li>
+              <li>
+                Dados incluídos nas mensagens de e-mail que nos envia, tratados
+                através do seu serviço de correio eletrónico
               </li>
               <li>Quando exigido por lei ou ordem judicial</li>
             </ul>

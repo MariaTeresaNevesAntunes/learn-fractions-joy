@@ -11,7 +11,7 @@ const About = () => {
         {/* Hero Section */}
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Sobre o <span className="text-primary">Learn Fractions Joy</span>
+            Sobre o <span className="text-primary">MTNA - Domine as Frações</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Um projeto dedicado a ajudar alunos a compreender frações de forma simples, visual e confiante.
@@ -33,7 +33,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Sou a <span className="text-primary">Maria</span>, educadora e criadora do Learn Fractions Joy
+                  Sou a <span className="text-primary">Maria</span>, educadora e criadora do MTNA - Domine as Frações
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                   Um projeto dedicado a ajudar alunos a compreender frações de forma simples, visual e confiante.
@@ -85,7 +85,7 @@ const About = () => {
         {/* Objectives Section */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-center mb-10">
-            🎯 Objetivos do Learn Fractions Joy
+            🎯 Objetivos do MTNA - Domine as Frações
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-card rounded-xl p-6 border">
@@ -224,7 +224,7 @@ const About = () => {
       {/* Footer */}
       <footer className="border-t mt-16 py-8">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>© 2024 Learn Fractions Joy. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} MTNA - Domine as Frações. Todos os direitos reservados.</p>
           <div className="flex justify-center gap-6 mt-4">
             <Link to="/privacidade" className="hover:text-foreground transition-colors">Privacidade</Link>
             <Link to="/termos" className="hover:text-foreground transition-colors">Termos</Link>

@@ -22,22 +22,24 @@ const Terms = () => {
       <main className="container mx-auto px-4 py-8 max-w-3xl">
         <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
           <p className="text-muted-foreground text-lg">
-            Última atualização: {new Date().toLocaleDateString('pt-PT')}
+            Última atualização: 1 de outubro de 2026
           </p>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">1. Aceitação dos Termos</h2>
             <p className="text-muted-foreground">
-              Ao aceder e utilizar o FraçõesApp, concorda em cumprir estes Termos de Utilização. 
-              Se não concordar com qualquer parte destes termos, não deve usar a aplicação.
+              Ao aceder e utilizar a plataforma MTNA - Domine as Frações,
+              concorda em cumprir estes Termos de Utilização. Se não concordar
+              com qualquer parte destes termos, não deve utilizar a plataforma.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">2. Descrição do Serviço</h2>
             <p className="text-muted-foreground">
-              O FraçõesApp é uma plataforma educacional gratuita dedicada ao ensino de frações 
-              matemáticas. A aplicação oferece:
+              A plataforma MTNA - Domine as Frações é um serviço educativo
+              gratuito dedicado ao ensino de frações matemáticas. A plataforma
+              oferece:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Conteúdo teórico sobre frações</li>
@@ -51,8 +53,8 @@ const Terms = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">3. Uso Permitido</h2>
             <p className="text-muted-foreground">
-              Pode utilizar o FraçõesApp para fins educacionais pessoais ou em ambiente escolar. 
-              É permitido:
+              Pode utilizar a plataforma MTNA - Domine as Frações para fins
+              educativos pessoais ou em ambiente escolar. É permitido:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Acessar o conteúdo educacional</li>
@@ -78,9 +80,10 @@ const Terms = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">5. Propriedade Intelectual</h2>
             <p className="text-muted-foreground">
-              Todo o conteúdo do FraçõesApp, incluindo textos, gráficos, logos e código, 
-              é protegido por direitos de autor. O uso da aplicação não transfere nenhum 
-              direito de propriedade intelectual.
+              Todo o conteúdo da plataforma MTNA - Domine as Frações, incluindo
+              textos, gráficos, logótipos e código, é protegido por direitos de
+              autor. A utilização da plataforma não transfere qualquer direito
+              de propriedade intelectual.
             </p>
           </section>
 
