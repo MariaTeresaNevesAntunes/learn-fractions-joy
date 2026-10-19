@@ -112,7 +112,7 @@ const RouteSeo = () => {
 
   const isAlias = normalizedPath === "/contato";
   const canonicalPath = isAlias ? "/contacto" : normalizedPath;
-  const url = `${SITE_URL}${canonicalPath === "/" ? "/" : canonicalPath}`;
+  const url = `${SITE_URL}${canonicalPath === "/" ? "/" : `${canonicalPath}/`}`;
   const indexable = meta.indexable !== false && !isAlias;
   const schema = isTheoryModule
     ? {
