@@ -47,9 +47,6 @@ jobs:
           cp public/robots.txt dist/robots.txt
           cp public/sitemap.xml dist/sitemap.xml
 
-      - name: SPA fallback for client-side routes
-        run: cp dist/index.html dist/404.html
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
